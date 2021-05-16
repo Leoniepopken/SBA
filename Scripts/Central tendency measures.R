@@ -16,7 +16,7 @@ mode <- Mode(x)
 arith <- 1/n * sum(x)
 
 # median
-median <- mean(x)
+median <- median(x)
 
 # Quantiles 0.2, 0.25, 0.5, 0.75
 quantiles <- c(xordered[floor(n * 0.20) + 1], xordered[floor(n * 0.25) + 1], xordered[floor(n * 0.5) + 1], xordered[floor(n * 0.75) + 1])
