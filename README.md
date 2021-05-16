@@ -1,6 +1,6 @@
 ## SBA
 
-These scripts provided in this repository should provide a lot of the formulas (especially those that are annoying 
+These scripts provided in this repository should provide a lot of the formulas disussed in the Lecture Statistics for BWL (especially those that are annoying 
 to type ;)
 
 All input should be insert above the lines in the scripts. The places for that are marked.
