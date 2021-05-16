@@ -1,7 +1,7 @@
-x <- c(8.5,10.31,12.08,10.51,10.25,10.01,6.56,7.39,7)
-y <- c(539,649,768,667,651,646,421,470,450)
+x <- c(Eingabe)
+y <- c(Eingabe)
 # arithmetic means
-n <- 9
+n <- Eingabe
 arthX <- 1/n * sum(x)
 arthY <- 1/n * sum(y)
 # calclulate the beta
