@@ -1,7 +1,10 @@
+# # Insert your input here
 x <- c(Eingabe)
 y <- c(Eingabe)
-# arithmetic means
 n <- Eingabe
+-------------------------------------------------------------------
+
+# arithmetic means
 arthX <- 1/n * sum(x)
 arthY <- 1/n * sum(y)
 # calclulate the beta
@@ -9,13 +12,13 @@ beta <- (sum(x*y) - n*arthY*arthX) / (sum(x*x) - n*arthX*arthX)
 # calculate the alpha
 alpha <- arthY - beta*arthX
 # predicted value of Y for any value of X
-Y <- alpha + beta * x
+predictedY <- alpha + beta * x
 # total dispersion of yi
 SQT <- sum((y - arthY) * (y - arthY))
-SQE <- sum((Y - arthY) * (Y - arthY))
-SQR <- sum((y - Y) * (y - Y))
+SQE <- sum((predictedY - arthY) * (predictedY - arthY))
+SQR <- sum((y - predictedY) * (y - predictedY))
 
-# coefficient of determination as a measure for the quality of the model
+# coefficient of determination RR as a measure for the quality of the model
 RR <- SQE / SQT
 # Alternative Formula
 RRAlt <- 1 - (SQR / SQT)

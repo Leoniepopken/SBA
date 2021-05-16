@@ -1,14 +1,16 @@
-n <- 1349
-# Input for the matrix
-mdata <- matrix(c(278, 174, 39, 106, 57, 63, 281, 158, 10, 72, 82, 29), nrow = 2, ncol = 6, byrow = TRUE)
+# Insert you Input here
+x <- matrix(c(Eingabe), nrow = 3, ncol = 2, byrow = TRUE)
+-------------------------------------------------------------------
+
+n <- sum(x)
 # calculation of expected absolute frequencies
 # Warning: For ExpFreq() you need to install and use the package DescTools
-expected <- ExpFreq(mdata)
+expectedFreuquencies <- ExpFreq(x)
 # calculation of chi-squared-coefficient. Note that chi is a list. You have to write the value you need next to Chi
-chi <- chisq.test(mdata)
-Chi <- 36.29473
+chi <- chisq.test(x)
+Chi <- Eingabe
 # calculation of (corrected) Contingency Coefficient
-M <- min(nrow(mdata), ncol(mdata))
+M <- min(nrow(x), ncol(x))
 Kmax <- sqrt((M-1)/M)
 K <- sqrt((Chi) /(n + Chi))
 Kcorr <- K / Kmax

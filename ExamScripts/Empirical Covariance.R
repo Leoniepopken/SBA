@@ -1,7 +1,10 @@
+# insert your input here
 x <- c(Eingabe)
 y <- c(Eingabe)
-# arithmetic means
 n <- Eingabe
+# ------------------------------------------------------------------
+
+# arithmetic means
 arthX <- 1/n * sum(x)
 arthY <- 1/n * sum(y)
 # empirical covariance

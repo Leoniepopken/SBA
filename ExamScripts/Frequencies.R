@@ -1,8 +1,16 @@
-# Input Matrix
-mdata <- matrix(c(4,4,1,4,4,1,4,1,1,4,1,1,4,3,1,1,1,5,1,1,1,3,1,3,4,1,4,1,1,4,4,4,1,1,1,1), nrow = 3, ncol = 12, byrow = TRUE)
+# Insert your input here
+x <- matrix(c(Eingabe), nrow = 3, ncol = 2, byrow = TRUE)
+
+# Calculation of absolute frequencies
+absFreq <- table(x)
 
 # Calculation of relative frequencies
-relFreq <- table(mdata) / (nrow(mdata) * ncol(mdata))
+relFreq <- x / sum(x)
+
+# calculation of expected absolute frequencies
+# Warning: For ExpFreq() you need to install and use the package DescTools
+expectedFrequency <- ExpFreq(x)
+
 
 
 

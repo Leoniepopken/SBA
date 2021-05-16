@@ -1,7 +1,10 @@
-x <- c(1,2,3,4,5,6,7,8,9,10)
-y <- c(-0.09, 2.37, 3.14, 4.26, 5.48, 4.77, 7.30, 6.45, 9.14, 11.13)
+# Insert your input here
+x <- c(Eingabe)
+y <- c(Eingabe)
+n <- Eingabe
+# -----------------------------------------------------------
+
 # arithmetic means
-n <- 10
 arthX <- 1/n * sum(x)
 arthRankX <- 1/n * sum(rank(x))
 arthRankY <- 1/n * sum(rank(y))
