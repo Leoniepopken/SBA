@@ -22,7 +22,7 @@ Also I'll try to provide some explanation and interpretation rules
 - range of distribution
  - ### Explanation
     - Median: At least 50% of the values in the data are less or equal / greater than the median
- - ###Interpretation
+ - ### Interpretation
     - arithmetic mean ~ median ~ mode: data is symmetric
     - arithmetic mean > median > mode: data is left-skewed
     - arithmetic mean < median < mode: data is right-skewed
@@ -32,7 +32,7 @@ Also I'll try to provide some explanation and interpretation rules
 - Basic Formula for Bravias-Pearson correlation coefficient
 - Alternative, computationally more efficient formula for the Bravais-Pearson correlation coefficient
 - Comment out the formula you don't need
-- ###Interpretation
+- ### Interpretation
     - „weak correlation“ |r| < 0.5
     - „medium correlation“ 0.5 ≤ |r| < 0.8
     - „strong correlation“ 0.8 ≤ |r|
@@ -50,7 +50,7 @@ Also I'll try to provide some explanation and interpretation rules
 ## Contingency and x2 coefficient
 - calculation of chi-squared-coefficient.
 - calculation of (corrected) Contingency Coefficient
-- ###Interpretation
+- ### Interpretation
     - 𝝌𝟐 is small (close to zero) if 𝑿 and 𝒀 do not depend on each other
     - 𝝌𝟐 is large if 𝑿 and 𝒀 depend on each other
     - 𝑲∗ = 𝟎 (or close to zero) if 𝑿 and 𝒀 are not (or only very weakly) dependent on each other
@@ -78,7 +78,7 @@ Also I'll try to provide some explanation and interpretation rules
 - calculation of Spearmans (Rang-) Korrelationskoeffizient
 - Alternative, computationally more efficient formula in the case without ties (all values different):
 - ranks
-- ###Interpretation
+- ### Interpretation
   - rsp > 0: positive monotonic relationship
   - rsp < 0: negative monotonic relationship
   - rsp ≈ 0: no monotonic relationship
