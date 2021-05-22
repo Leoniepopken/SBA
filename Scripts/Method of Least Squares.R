@@ -5,13 +5,10 @@ y <- c(Eingabe)
 n <- Eingabe
 # ---------------------------------------------------------------------
 
-# arithmetic means
-arthX <- 1/n * sum(x)
-arthY <- 1/n * sum(y)
 # calclulate the beta
-beta <- (sum(x*y) - n*arthY*arthX) / (sum(x*x) - n*arthX*arthX)
+beta <- (sum(x*y) - n*mean(y)*mean(x)) / (sum(x*x) - n*mean(x)*mean(x))
 # calculate the alpha
-alpha <- arthY - beta*arthX
+alpha <- mean(y) - beta*mean(x)
 # predicted value of Y for any value of X
 Y <- alpha + beta * x
 # calculation of residuals (errors)

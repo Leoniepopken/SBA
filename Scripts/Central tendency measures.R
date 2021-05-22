@@ -1,6 +1,6 @@
 # Insert your input here
-x <- c(Eingabe)
-n <- Eingabe
+x <- c(input)
+n <- input
 # -------------------------------------------------------------------
 
 xordered <- x[order(x)]
@@ -13,7 +13,7 @@ Mode <- function(x) {
 mode <- Mode(x)
 
 # arithmetic mean
-arith <- 1/n * sum(x)
+arith <- mean(x)
 
 # median
 median <- median(x)

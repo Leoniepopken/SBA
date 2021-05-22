@@ -6,7 +6,7 @@ to type ;)
 All input should be insert above the lines in the scripts. The places for that are marked.
 
 Here is an overview of all formulas that are provided in this repository, so you can easily search for it.
-Also I'll try to provide some explanation and interpretation rules
+I'll also try to provide some explanation and interpretation rules
 
 ## Frequencies
 - Calculation of absolute frequencies

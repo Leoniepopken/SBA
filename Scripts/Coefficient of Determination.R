@@ -5,8 +5,8 @@ n <- Eingabe
 -------------------------------------------------------------------
 
 # arithmetic means
-arthX <- 1/n * sum(x)
-arthY <- 1/n * sum(y)
+arthX <- mean(x)
+arthY <- mean(y)
 # calclulate the beta
 beta <- (sum(x*y) - n*arthY*arthX) / (sum(x*x) - n*arthX*arthX)
 # calculate the alpha
