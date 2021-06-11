@@ -1,9 +1,7 @@
 # SBA
 
-These scripts provided in this repository should provide a lot of the formulas disussed in the Lecture Statistics for BWL (especially those that are annoying 
+This README should provide a lot of the formulas disussed in the Lecture Statistics for BWL (especially those that are annoying 
 to type ;)
-
-All input should be insert above the lines in the scripts. The places for that are marked.
 
 Here is an overview of all formulas that are provided in this repository, so you can easily search for it.
 I'll also try to provide some explanation and interpretation rules
@@ -15,7 +13,7 @@ I'll also try to provide some explanation and interpretation rules
   
 - marginal frequncies <br>addmargins()
 
- - ###Joint Frequencies
+ - ### Joint Frequencies
     - Contingency tables for visualization <br>addmargins()
     
 - ### Conditional Frequencies
