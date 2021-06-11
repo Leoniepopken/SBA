@@ -54,8 +54,12 @@ I'll also try to provide some explanation and interpretation rules
     - SQT <br> `sum((y - mean(y)) * (y - mean(y)))`
     - SQE  <br> `sum((Y - mean(y)) * (Y - mean(y)))`
     - SQR  <br>`sum((y - Y) * (y - Y))`
-- coefficient of determination RR as a measure for the quality of the model  <br>`SQE / SQT`
+- coefficient of determination R² as a measure for the quality of the model  <br>`SQE / SQT`
 - Alternative Formula  <br>`1 - (SQR / SQT)`
+- ### Properties of the coefficient of determination
+  R² = 0 explained dispersion zero -> regression model is extremely bad
+  R² = 1 explained dispersion = total dispersion -> regression model is perfectly fitted to data
+
 
 ## Contingency and x2 coefficient
 - calculation of chi-squared-coefficient. <br>
@@ -81,7 +85,7 @@ I'll also try to provide some explanation and interpretation rules
 ## Measurement of Dispersion
 - empirical variance (s^2) <br>  `(1/n) * (sum((x - mean(x)) * (x - mean(x))))`
 - Standard deviation (s)  <br>`sqrt((1/n) * (sum((x - mean(x)) * (x - mean(x)))))`
-- sample variance  <br>(1/(n-1)) * `sum((x-mean(x))*(x-mean(x)))`
+- sample variance  <br>`(1/(n-1)) * sum((x-mean(x))*(x-mean(x)))`
 - Coefficient of Variation  <br> `(sqrt((1/n) * (sum((x - mean(x)) * (x - mean(x)))))) / mean(x)`
 
 - ### Properties of Variance and Standard Deviation
@@ -106,7 +110,6 @@ I'll also try to provide some explanation and interpretation rules
   - rsp > 0: positive monotonic relationship
   - rsp < 0: negative monotonic relationship
   - rsp ≈ 0: no monotonic relationship
-
 
 
 
