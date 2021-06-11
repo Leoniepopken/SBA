@@ -46,13 +46,14 @@ I'll also try to provide some explanation and interpretation rules
     - „strong correlation“ 0.8 ≤ |r|
 
 ## Coefficient of Determination / Linear Regression
-- calculation of least squares estimator <br> beta <- (sum(x*y) - n*mean(y)*mean(x)) / (sum(x*x) - n*mean(x)*mean(x))  <br>
-  alpha <- mean(y) - beta*mean(x)
-- predicted value of Y for any value of X  <br>alpha + beta * x
+- calculation of least squares estimator <br> 
+  `b <- (sum(x*y) - n*mean(y)*mean(x)) / (sum(x*x) - n*mean(x)*mean(x))`  <br>
+  `a <- mean(y) - b*mean(x)`
+- predicted value of Y for any value of X  <br> a + b * x
 - total dispersion of yi
     - SQT <br> sum((y - mean(y)) * (y - mean(y)))
-    - SQE  <br> sum((predictedY - mean(y)) * (predictedY - mean(y)))
-    - SQR  <br>sum((y - predictedY) * (y - predictedY))
+    - SQE  <br> sum((Y - mean(y)) * (Y - mean(y)))
+    - SQR  <br>sum((y - Y) * (y - Y))
 - coefficient of determination RR as a measure for the quality of the model  <br>SQE / SQT
 - Alternative Formula  <br>1 - (SQR / SQT)
 
@@ -94,9 +95,9 @@ I'll also try to provide some explanation and interpretation rules
 
 
 ## Method of Least Squares
-- calculation of least squares estimators  <br> b <- (sum(x*y) - n*(mean(y)*mean(x))) / (sum(x*x) - n*(mean(x)*mean(x)))
-  <br>a <- mean(y) - beta*mean(x)
-- calculation of predicted value of Y for any value of X  <br> alpha + beta * x
+- calculation of least squares estimators  <br> `b <- (sum(x*y) - n*(mean(y)*mean(x))) / (sum(x*x) - n*(mean(x)*mean(x)))`
+  <br> `a <- mean(y) - b*mean(x)`
+- calculation of predicted value of Y for any value of X  <br> a + b * x
 - calculation of residuals (errors)  <br>residuals <- y - Y
 
 ## Spearmans Correlation Coefficient
