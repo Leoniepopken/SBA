@@ -6,6 +6,8 @@ to type ;)
 Here is an overview of all formulas that are provided in this repository, so you can easily search for it.
 I'll also try to provide some explanation and interpretation rules
 
+# Descriptive statistics and exploratory data analysis
+
 ## Frequencies
 - Calculation of absolute frequencies  <br>`table(x)`
 - Calculation of relative frequencies  <br>`prop.table(table(x))`
@@ -111,6 +113,22 @@ I'll also try to provide some explanation and interpretation rules
   - rsp < 0: negative monotonic relationship
   - rsp ≈ 0: no monotonic relationship
 
+<h/> ------------------------------------------------------------------------------------------------------------------------
+
+# Probability Theorie
+
+## Laplace probability
+
+A random experiment in which all possible outcomes have the same probability, is called Laplace experiment.
+- probability P(A) of an event A out of Omega <br>
+  `number of outcomes for which event A occurs / number of all possible outcomes`
+  
+- ### Properties
+  - 0 <= P(A) <= 1 for all A out of Omega
+  - the impossible event has probability 0
+  - if A out of B holds, then event B has at least the probability of event A
+  - the probability of the complementary event has the probability 1 - P(A)
+  - For disjoint events the following formula holds: P(A and B) = P(A) + P(B)
 
 
 
