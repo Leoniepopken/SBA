@@ -123,13 +123,32 @@ A random experiment in which all possible outcomes have the same probability, is
 - probability P(A) of an event A out of Omega <br>
   `number of outcomes for which event A occurs / number of all possible outcomes`
   
+- urn experiment: possibilities with putting back <br> `population ^ sample size = N ^ n`
+- urn experiment: possibilities without putting back <br> `N ⋅ (N − 1) ⋅ (N − 2) ⋅ . . . ⋅ (N − n + 1)
+  `
+  
 - ### Properties
   - 0 <= P(A) <= 1 for all A out of Omega
   - the impossible event has probability 0
   - if A out of B holds, then event B has at least the probability of event A
   - the probability of the complementary event has the probability 1 - P(A)
   - For disjoint events the following formula holds: P(A and B) = P(A) + P(B)
+  
+## Conditional properities
+Conditional probability of A given (the conditional) B in a Laplace Experiment
+- `P(A|B) = |(A and B)| / |B| = P(A and B) / P(B)`
+- ### Properties
+  - Conditional probabilities are numbers between 0 and 1
+  - The impossible event ∅ has conditional probability 0
+  - If 𝑨 ⊆ 𝑪 holds, then event 𝑪 has at least the same conditional probability as event 𝑨
+  - Calculation of the conditional probability of the complementary event see slides
+  - P(A and C|B) = P(A|B) + P(C|B) - P(A and C|B) for all B in Omega with P(B) > 0
+  - P(A and B) = P(A|B) * P(B) for all A and B in Omega with P(B) > 0
+  - Law of probability see slides
 
+## Independence of discrete random variables
+The following functions needs three parameters as input: P(A), P(B) and P(A and B) and returns information about the dependence of the events<br>
+`dependence <- function(PA, PB, PAB){ if(PA * PB == PAB) { return  ("These events are independent")} else {return ("These events are dependent") }}`
 
 
 
