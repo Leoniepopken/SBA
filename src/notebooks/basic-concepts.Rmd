@@ -1,0 +1,44 @@
+---
+title: "Basic Concepts of Statistics"
+output: html_notebook
+---
+
+### Statistical Units
+- Objects on which data is observed
+- Examples:
+  - Houses
+  - Voters
+
+#### Population
+- Set of *all statistical units*
+- Examples:
+  - All houses in Munich
+  - All eligible Voters
+
+##### Subpopulation
+- Subset of the population
+
+#### Sample
+- **Actual** subset of the population **surveyed**
+  - Sample is a representation of the [population](#population)
+  - Examples:
+    - Drawing random examples (House on Street XY)
+  - ***Full survey:***
+    - Entire population is examined
+
+---
+
+### Characteristics
+- Characteristic or Variable: Quantity of interest on observed a [statistical unit](#statistical-units)
+- **As a rule**: often multiple characteristics are collected on one statistical unit
+- Examples: 
+  - Rent index characteristic: `Net rent` or `Living Space`, etc
+  - Opinion poll variable: `Gender` or `preferred party`, etc
+
+- **Characteristic value**:
+  - The actual value for a statistical unit
+  - Examples:
+    - for characteristic _Gender:_ `male` or `female`
+    
+---
+[Back to Table of Contents](/)
