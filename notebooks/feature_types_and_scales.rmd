@@ -1,0 +1,14 @@
+---
+title: "Feature Types and Scales"
+output: html_notebook
+---
+
+
+
+| Scale Type | Description                                                             | Feature Type                          | Further classification | Example                                    |
+|------------|-------------------------------------------------------------------------|---------------------------------------|------------------------|--------------------------------------------|
+| Nominal    | no meaningful order                                                     | qualitative                           | discrete               | gender; eye colour                         |
+| Ordinal    | Expressions can be ordered, but distances cannot be interpreted         | qualitative + low quantitatve aspects | disctrete              | always > frequently > occasionally > never |
+| Cardinal   | Expressions are numbers whose distances can be interpreted meaningfully | quantitative                          | discrete/continous     | height; duration                           |
+
+[Back to Table of Contents](../)
