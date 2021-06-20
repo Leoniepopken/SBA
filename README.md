@@ -1,6 +1,6 @@
 # SBA - The unofficial Website
 
-## [View all resources | Visit Website](https://leoniepopken.github.io/sba/)
+## [View all resources | Visit Website](https://leoniepopken.github.io/SBA/)
 
 This repository should be a central learning hub for the Statistics course at TUM by Prof. Dr. Rudi Zagst.
 
@@ -8,7 +8,7 @@ In here we will provide learning resources, examples as well as R-snippets.
 
 ### Usage
 
-[Click here](https://leoniepopken.github.io/sba/)
+[Click here](https://leoniepopken.github.io/SBA/)
 
 ### Want to contribute?
 
