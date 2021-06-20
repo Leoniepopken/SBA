@@ -1,0 +1,23 @@
+---
+title: "SBA Resources"
+output: html_notebook
+---
+
+Welcome to the **unofficial** Website for Statistics for Business Administration.
+
+Here you can find an overview over most of the formulas that are provided in the lecture together with explainations and examples.
+
+_Note:_ This website is a Work-In-Progress. If you feel like someting is missing [tell us](https://github.com/Leoniepopken/SBA/issues), write us via WhatsApp or add it yourself!
+
+### Table of Contents
+
+#### Summaries
+- Descriptive Statistics
+  1. [Basic Concepts of Statistics](./notebooks/basic-concepts.nb.html)
+  2. More are on the way
+- Explorative Statistics
+- Inductive Statistics
+
+#### Other (Useful Documents)
+1. [R Cheat Sheet](./pdfs/r-befehle.pdf) (german only)
+
