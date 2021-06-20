@@ -12,7 +12,7 @@ In here we will provide learning resources, examples as well as R-snippets.
 
 ### Want to contribute?
 
-Its simple! Open a new Pull request. If you are not familliar with github, write us per WhatsApp :)
+It's simple! Open a new Pull request. If you are not familiar with github, write us per WhatsApp :)
 
 ### Have questions?
 
