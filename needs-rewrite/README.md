@@ -1,16 +1,6 @@
 # Descriptive statistics and exploratory data analysis
 
-## Frequencies
 
-- Calculation of absolute frequencies <br>`table(x)`
-- Calculation of relative frequencies <br>`prop.table(table(x))`
-- calculation of expected absolute frequencies <br>`library(DescTools)` <br>`ExpFreq(x)`
-- marginal frequncies <br>`addmargins()`
-
-- ### Joint Frequencies
-  - Contingency tables for visualization <br>`addmargins()`
-- ### Conditional Frequencies
-  - The conditional frequency distribution of 𝒀 under the condition 𝑿 = 𝒂i <br> `hij/hi`.
 
 ## Central Tendency measures
 
