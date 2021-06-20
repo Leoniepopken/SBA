@@ -9,7 +9,8 @@ output: html_notebook
 - marginal frequncies <br>`addmargins()`
 
 ### Joint Frequencies
-- Contingency tables for visualization <br>`addmargins()`
+- Contingency tables for visualization <br>`addmargins()` <br>
+
 ### Conditional Frequencies
 - The conditional frequency distribution of 𝒀 under the condition 𝑿 = 𝒂i <br> `hij/hi`.
 
