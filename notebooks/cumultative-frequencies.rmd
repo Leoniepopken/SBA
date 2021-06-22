@@ -1,0 +1,11 @@
+---
+title: "Cumultative Frequencies"
+output: html_notebook
+---
+
+For each given value x determine the number of values in the list of observations that are less than or equal to x <br>
+It holds: H(x) = h(a1) + h (a2) + ... + h(aj) <br>
+For the relative cumultative frequency distribution it holds: <br>
+F(x) = f(a1) + f(a2) + ... + f(aj) <br>
+
+[Back to Table of Contents](../)

@@ -1,0 +1,8 @@
+---
+title: "Conditional Frequencies"
+output: html_notebook
+---
+
+The conditional frequency distribution of 𝒀 under the condition 𝑿 = 𝒂i <br> `hij/hi`.
+
+[Back to Table of Contents](../)

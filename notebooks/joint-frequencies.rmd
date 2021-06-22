@@ -1,0 +1,8 @@
+---
+title: "Joint Frequencies"
+output: html_notebook
+---
+
+- Contingency tables for visualization <br>`addmargins(x)` <br>
+
+[Back to Table of Contents](../)

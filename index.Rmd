@@ -14,7 +14,10 @@ _Note:_ This website is a Work-In-Progress. If you feel like someting is missing
 #### Summaries
 - Descriptive Statistics
   1. [Basic Concepts of Statistics](./notebooks/basic-concepts.nb.html)
-  2. [Frequencies](./notebooks/frequencies.nb.html)
+  2. [Frequencies](./notebooks/frequencies.nb.html) <br>
+        2.1 [Cumultative Frequencies](./notebooks/cumultative-frequencies.nb.html) <br>
+        2.2 [Joint Frequencies](./notebooks/joint-frequencies.nb.html) <br>
+        2.3 [Conditional Frequencies](./notebooks/conditional-frequencies.nb.html)
   3. [How to obtain data](./notebooks/How-to-obtain-data.nb.html)
   4. [Feature Types and Scales](./notebooks/feature-types-and-scales.nb.html)
 - Explorative Statistics
