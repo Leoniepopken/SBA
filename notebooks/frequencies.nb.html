@@ -216,16 +216,28 @@ pre code {
 
 <!-- rnb-text-begin -->
 <ul>
-<li><p>Calculation of absolute frequencies <br> <code>table(x)</code></p></li>
-<li><p>Calculation of relative frequencies <br><code>prop.table(table(x))</code></p></li>
-<li><p>Classification can be created with the functions <code>cut()</code> and <code>seq()</code> <br> <code>cut()</code> creats the Groups, <code>seq()</code> creats the boarders, from which to which the Groups should be made and <code>right = FALSE</code> makes the right boarder open.</p></li>
-<li><p>marginal frequncies <br><code>addmargins()</code></p></li>
+<li>Calculation of absolute frequencies <br> <code>table(x)</code></li>
+<li>Calculation of relative frequencies <br><code>prop.table(table(x))</code></li>
+<li>calculation of expected absolute frequencies <br><code>library(DescTools)</code> <br><code>ExpFreq(x)</code></li>
+<li>marginal frequncies <br><code>addmargins()</code></li>
+</ul>
+<div id="joint-frequencies" class="section level3">
+<h3>Joint Frequencies</h3>
+<ul>
+<li>Contingency tables for visualization <br><code>addmargins()</code> <br></li>
+</ul>
+</div>
+<div id="conditional-frequencies" class="section level3">
+<h3>Conditional Frequencies</h3>
+<ul>
+<li>The conditional frequency distribution of 𝒀 under the condition 𝑿 = 𝒂i <br> <code>hij/hi</code>.</li>
 </ul>
 <hr />
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkZyZXF1ZW5jaWVzIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KLSBDYWxjdWxhdGlvbiBvZiBhYnNvbHV0ZSBmcmVxdWVuY2llcyA8YnI+IGB0YWJsZSh4KWANCi0gQ2FsY3VsYXRpb24gb2YgcmVsYXRpdmUgZnJlcXVlbmNpZXMgPGJyPmBwcm9wLnRhYmxlKHRhYmxlKHgpKWANCi0gQ2xhc3NpZmljYXRpb24gY2FuIGJlIGNyZWF0ZWQgd2l0aCB0aGUgZnVuY3Rpb25zIGBjdXQoKWAgYW5kIGBzZXEoKWANCiAgICA8YnI+IGBjdXQoKWAgY3JlYXRzIHRoZSBHcm91cHMsIGBzZXEoKWAgY3JlYXRzIHRoZSBib2FyZGVycywgZnJvbSB3aGljaCB0byB3aGljaCB0aGUgR3JvdXBzIHNob3VsZCBiZSBtYWRlIGFuZA0KICAgIGByaWdodCA9IEZBTFNFYCBtYWtlcyB0aGUgcmlnaHQgYm9hcmRlciBvcGVuLg0KDQotIG1hcmdpbmFsIGZyZXF1bmNpZXMgPGJyPmBhZGRtYXJnaW5zKClgDQoNCi0tLQ0KW0JhY2sgdG8gVGFibGUgb2YgQ29udGVudHNdKC4uLyk=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkZyZXF1ZW5jaWVzIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KLSBDYWxjdWxhdGlvbiBvZiBhYnNvbHV0ZSBmcmVxdWVuY2llcyA8YnI+IGB0YWJsZSh4KWANCi0gQ2FsY3VsYXRpb24gb2YgcmVsYXRpdmUgZnJlcXVlbmNpZXMgPGJyPmBwcm9wLnRhYmxlKHRhYmxlKHgpKWANCi0gY2FsY3VsYXRpb24gb2YgZXhwZWN0ZWQgYWJzb2x1dGUgZnJlcXVlbmNpZXMgPGJyPmBsaWJyYXJ5KERlc2NUb29scylgIDxicj5gRXhwRnJlcSh4KWANCi0gbWFyZ2luYWwgZnJlcXVuY2llcyA8YnI+YGFkZG1hcmdpbnMoKWANCg0KIyMjIEpvaW50IEZyZXF1ZW5jaWVzDQotIENvbnRpbmdlbmN5IHRhYmxlcyBmb3IgdmlzdWFsaXphdGlvbiA8YnI+YGFkZG1hcmdpbnMoKWAgPGJyPg0KDQojIyMgQ29uZGl0aW9uYWwgRnJlcXVlbmNpZXMNCi0gVGhlIGNvbmRpdGlvbmFsIGZyZXF1ZW5jeSBkaXN0cmlidXRpb24gb2Yg8J2SgCB1bmRlciB0aGUgY29uZGl0aW9uIPCdkb8gPSDwnZKCaSA8YnI+IGBoaWovaGlgLg0KDQotLS0NCltCYWNrIHRvIFRhYmxlIG9mIENvbnRlbnRzXSguLi8p</div>
 
 
 
