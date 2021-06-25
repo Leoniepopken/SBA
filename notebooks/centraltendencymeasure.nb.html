@@ -215,13 +215,22 @@ pre code {
 
 
 <!-- rnb-text-begin -->
-<ol style="list-style-type: decimal">
-<li><a href="./notebooks/mode.nb.html">Mode</a></li>
-</ol>
+<div id="mode" class="section level3">
+<h3>Mode</h3>
+<ul>
+<li><p>A simple central tendency that can be used for all scale levels</p></li>
+<li><p>The mode indicates which expression occurs most frequently</p></li>
+<li><p>If the absolute (or relative) frequency distribution has a unique maximum, the mode is unique and is denoted by x(mod)</p></li>
+<li><p>In the bar chart, the mode is the expression with the highest column</p></li>
+<li><p>the mode does not always have to be unique</p></li>
+<li><p>If only very few values of the list of observations match the mode is not very meaningful</p></li>
+<li><p>compute the mode in R: <code>Mode &lt;- function(x) { ux &lt;- unique(x) ux[which.max(tabulate(match(x, ux)))] } mode &lt;- Mode(x)</code></p></li>
+</ul>
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkNlbnRyYWwgdGVuZGVuY3kgbWVhc3VyZXMiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoxLiBbTW9kZV0oLi9ub3RlYm9va3MvbW9kZS5uYi5odG1sKQ0KDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkNlbnRyYWwgdGVuZGVuY3kgbWVhc3VyZXMiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQojIyMgTW9kZQ0KLSBBIHNpbXBsZSBjZW50cmFsIHRlbmRlbmN5IHRoYXQgY2FuIGJlIHVzZWQgZm9yIGFsbCBzY2FsZSBsZXZlbHMNCi0gVGhlIG1vZGUgaW5kaWNhdGVzIHdoaWNoIGV4cHJlc3Npb24gb2NjdXJzIG1vc3QgZnJlcXVlbnRseQ0KLSBJZiB0aGUgYWJzb2x1dGUgKG9yIHJlbGF0aXZlKSBmcmVxdWVuY3kgZGlzdHJpYnV0aW9uIGhhcyBhIHVuaXF1ZSBtYXhpbXVtLCB0aGUgbW9kZSBpcyB1bmlxdWUgYW5kIGlzDQpkZW5vdGVkIGJ5IHgobW9kKQ0KLSBJbiB0aGUgYmFyIGNoYXJ0LCB0aGUgbW9kZSBpcyB0aGUgZXhwcmVzc2lvbiB3aXRoIHRoZSBoaWdoZXN0IGNvbHVtbg0KLSB0aGUgbW9kZSBkb2VzIG5vdCBhbHdheXMgaGF2ZSB0byBiZSB1bmlxdWUNCi0gSWYgb25seSB2ZXJ5IGZldyB2YWx1ZXMgb2YgdGhlIGxpc3Qgb2Ygb2JzZXJ2YXRpb25zIG1hdGNoIHRoZSBtb2RlIGlzIG5vdCB2ZXJ5IG1lYW5pbmdmdWwNCg0KLSBjb21wdXRlIHRoZSBtb2RlIGluIFI6DQpgTW9kZSA8LSBmdW5jdGlvbih4KSB7IHV4IDwtIHVuaXF1ZSh4KSB1eFt3aGljaC5tYXgodGFidWxhdGUobWF0Y2goeCwgdXgpKSldIH0gbW9kZSA8LSBNb2RlKHgpYA0KDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ==</div>
 
 
 
