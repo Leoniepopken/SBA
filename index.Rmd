@@ -19,6 +19,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like someting is missing
   4. [Frequencies](./notebooks/frequencies.nb.html)
   5. [Graphical Representations](./notebooks/graphicalRepresentation.html)
   6. [Cumulative Frequencies](./notebooks/cumulative-frequencies.nb.html)
+  7. [Central tendency measures](./notebooks/centraltendencymeasure.nb.html)
 - Explorative Statistics
 - Inductive Statistics
 

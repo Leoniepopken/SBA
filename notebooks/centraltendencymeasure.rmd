@@ -1,0 +1,8 @@
+---
+title: "Central tendency measures"
+output: html_notebook
+---
+
+1. [Mode](./notebooks/mode.nb.html)
+
+[Back to Table of Contents](../)
