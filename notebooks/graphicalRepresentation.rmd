@@ -1,6 +1,6 @@
 ---
 title: "Graphical Representations"
-output: html_document
+output: html_notebook
 ---
 
 ### Bar diagrams

@@ -81,4 +81,11 @@ boxplot(x)
 |                                       | cardinal | yes  | yes             | yes    | yes       |
 | Robust against outliers               |          | yes  | no              | yes    | yes       |
 
+### Storage Rules
+
+| mean ~ median ~ mode | symmetric    |
+|----------------------|--------------|
+| mean > median > mode | left-skewed  |
+| mean < median < mode | right-skewed |
+
 [Back to Table of Contents](../)

@@ -1,0 +1,21 @@
+---
+title: "Measurement of Dispersion"
+output: html_notebook
+---
+### Variance and Standard Deviation
+- empirical variance s squared = `(1/n) * sum((x - mean(x)) * (x - mean(x)))`
+- empirical standard deviation s = `sqrt((1/n) * sum((x - mean(x)) * (x - mean(x))))`
+- sample variance = `(1/(n-1)) * sum((x - mean(x)) * (x - mean(x)))`
+
+#### Properties of Variance and Standard Deviation
+- senstive with respect to outliers
+- Variance and standard deviation do not set the dispersion in relation to the location of the data
+- With larger (average) values usually also variance and standard deviation are larger
+
+---
+
+### Coefficient of Variation
+- more suitable for dispersion comparison of distributions with very different (average) values
+- calculation in R: `(sqrt((1/n) * sum((x - mean(x)) * (x - mean(x))))) / mean(x)`
+
+[Back to Table of Contents](../)
