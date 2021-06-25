@@ -31,10 +31,10 @@ output: html_document
 `barplot(prop.table(Data), xlab = "Label", horiz = TRUE, las = 1, col = blues9)`
 
 ### pie charts
-also for small k <br>
-Disadvantages: <br>
-- no direct reading of relative / absolute frequencies possible
-- optically difficult to detect (eye detects relative lengths more easily than relative areas)
+- also for small k <br>
+- Disadvantages: <br>
+    -  no direct reading of relative / absolute frequencies possible
+    - optically difficult to detect (eye detects relative lengths more easily than relative areas)
 
 `pie(table(Data), col = blues9)`
 

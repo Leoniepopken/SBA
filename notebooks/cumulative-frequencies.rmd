@@ -1,0 +1,11 @@
+---
+title: "Cumulative Frequencies"
+output: html_notebook
+---
+
+- the function H(x) = (number of values xi <= x) is called the absolute cumulative frequency distribution of the variable X.
+    - it holds: `sum(x <= X)` if x is an vector of realizations of X
+- The resulting function F(x) = H(x)/n = (proportion of values xi with xi ≤ x) is called the relative cumulative frequency distribution or also the empirical distribution function of the variable X.
+    - it holds: `sum(f <= F)` if f is an vector of relative frequencies of x
+
+[Back to Table of Contents](../)

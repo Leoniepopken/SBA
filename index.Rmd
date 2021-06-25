@@ -18,6 +18,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like someting is missing
   3. [Feature Types and Scales](./notebooks/feature-types-and-scales.nb.html)
   4. [Frequencies](./notebooks/frequencies.nb.html)
   5. [Graphical Representations](./notebooks/graphicalRepresentation.html)
+  6. [Cumulative Frequencies](./notebooks/cumulative-frequencies.nb.html)
 - Explorative Statistics
 - Inductive Statistics
 
