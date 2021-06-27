@@ -42,5 +42,18 @@ output: html_notebook
 for large number of different expressions
 `histogram(Data, breaks = seq(), xlab = "Label", ylab = "Label")`
 
+### Two-dimensional bar charts
+- For small k and m
+- Structure: Enter absolute / relative frequencies for each combination of proficiencies
+- visualization in r:
+`
+library(epade)
+bar3d.ade(table(input), alpha = 0.2)
+`
+### Scatter plots
+- for two metric characteristics
+- in R: `plot(characterisicOne, characteristicTwo`
+- For more than two metric characteristics, you can form pairwise scatterplots and combine them into a scatter plot matrix
+
 [Back to Table of Contents](../)
 

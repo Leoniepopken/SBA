@@ -1,0 +1,15 @@
+---
+title: "Chi-squared coefficient "
+output: html_notebook
+---
+
+- calculation of chi-squared-coefficient. <br>
+`library(vcd)` <br>
+`assocstats(x)` <br>
+(For the chi coefficient we are intersted in the Pearsons chi squared)
+
+- #### Interpretation
+- 𝝌𝟐 is small (close to zero) if 𝑿 and 𝒀 do not depend on each other
+- 𝝌𝟐 is large if 𝑿 and 𝒀 depend on each other
+
+[Back to Table of Contents](../)

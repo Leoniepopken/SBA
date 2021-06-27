@@ -1,0 +1,15 @@
+---
+title: "Contingency Coefficient"
+output: html_notebook
+---
+
+- calculation of Contingency Coefficient. <br>
+`library(vcd)` <br>
+`assocstats(x)[4]` <br>
+(For the chi coefficient we are intersted in the Pearsons chi squared)
+
+- #### Interpretation
+- 𝑲∗ = 𝟎 (or close to zero) if 𝑿 and 𝒀 are not (or only very weakly) dependent on each other
+- 𝑲∗ = 𝟏 (or close to one) if 𝑿 und 𝒀 are strongly dependent on each other
+
+[Back to Table of Contents](../)

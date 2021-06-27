@@ -1,0 +1,12 @@
+---
+title: "Bravais-Pearson Correlation Coefficient"
+output: html_notebook
+---
+
+- `cor(x, y, method = "pearson")`
+- #### Interpretation
+- „weak correlation“ |r| < 0.5
+- „medium correlation“ 0.5 ≤ |r| < 0.8
+- „strong correlation“ 0.8 ≤ |r|
+
+[Back to Table of Contents](../)

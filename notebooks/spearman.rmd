@@ -1,0 +1,12 @@
+---
+title: "Spearman‘s (Rank) Correlation Coefficient"
+output: html_notebook
+---
+
+- calculation of Spearmans (Rang-) Korrelationskoeffizient <br>`cor(x, y, method = "spearman")`
+- #### Interpretation
+- rsp > 0: positive monotonic relationship
+- rsp < 0: negative monotonic relationship
+- rsp ≈ 0: no monotonic relationship
+
+[Back to Table of Contents](../)
