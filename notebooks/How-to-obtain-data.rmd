@@ -1,0 +1,13 @@
+---
+title: "How to obtain data"
+output: html_notebook
+---
+
+There are basically two ways of obtaining data: Experiments and Surveys
+
+| Primary statistical survey                         | Secondary statistical survey                                       | Tertiary statistical survey                                           |
+|----------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Collection of data specifically for current issues | Use of existing original data for new questions                    | Use of already existing, compressed data for new questions            |
+| E.g. Conducting a survey                           | E.g. Compilation of original data form stat. yearbooks or websites | E.g. Compilation of mean values form stat. yearbooks or from websites |
+
+[Back to Table of Contents](../)

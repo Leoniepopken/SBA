@@ -1,0 +1,91 @@
+---
+title: "Central tendency measures"
+output: html_notebook
+---
+
+note that in the R codes `x` is a vector of values. Vectors can be created with `c()` for examle: <br>
+```{r}
+c(1,2,3,4,5,6)
+```
+
+### Mode
+- A simple central tendency that can be used for all scale levels
+- The mode indicates which expression occurs most frequently
+- If the absolute (or relative) frequency distribution has a unique maximum, the mode is unique and is
+denoted by x(mod)
+- In the bar chart, the mode is the expression with the highest column
+- the mode does not always have to be unique
+- calculation in R:
+`Mode <- function(x) { ux <- unique(x) ux[which.max(tabulate(match(x, ux)))] } mode <- Mode(x)`
+
+##### Properties of the mode <br>
+- If only very few values of the list of observations match the mode is not very meaningful
+
+---
+
+### Arithmetic mean
+- calculation in R: `mean(x)`
+- for grouped data the arithmetic mean from the midpoints of the classes has to be calculated <br>
+
+##### Properties of the arithmetic mean <br>
+- the arithmetic mean is very sensitive to outliers
+- This sensitivity to outliers can be undesirable (e.g. individual errors in the data lead to large changes in the arithmetic mean)
+
+---
+
+### Median
+- for at least ordinally scaled characteristics
+- One half of the values of the original list should be below the median and the other half above
+- For odd 𝒏𝒏 the median is the middle value of the ordered data
+- calculation in R: `median(x)`
+
+#### Properties of the median
+- robust against outliers
+- At least 50% of the values in the data are less or equal to the median
+- At least 50% of the values in the data are greater or equal to the median
+
+---
+
+### Quantiles
+- represent central tendency measures that also already provide information on the dispersion of the data
+- Let 0 < p < 1. For any value xp for which
+    - Let 0 < p < 1. For any value xp for which
+    - at least a proportion 1 − p is greater or equal than xp
+- calculation in R: Quantiles 0.2, 0.25, 0.5, 0.75 <br>
+`c(xordered[floor(n * 0.20) + 1], xordered[floor(n * 0.25) + 1], xordered[floor(n * 0.5) + 1], xordered[floor(n * 0.75) + 1])`
+- calculation of interquartile range <br>`(xordered[floor(n * 0.75) + 1]) - (xordered[floor(n * 0.25) + 1])`
+
+#### Properties of the Quantiles and the interquartile range
+- robust against outliers
+- do not contain any information about the left and right ends
+
+---
+
+### five point summary
+- The five-point summary of the distribution of ametric variable consists of : <br> x(min), 0.25 - Quantile, median, 0.75 - Quantile, x(max)
+- visualization in R: `boxplot(x)`
+- example:
+```{r}
+x <- c(1,4,6,3,7,9,4,2,1,4)
+boxplot(x)
+```
+
+---
+
+#### Overview
+
+|                                       |          | Mode | Arithmetic mean | Median | Quantiles |
+|---------------------------------------|----------|------|-----------------|--------|-----------|
+| Applicable for different scale levels | nominal  | yes  | no              | no     | no        |
+|                                       | ordinal  | yes  | no              | yes    | yes       |
+|                                       | cardinal | yes  | yes             | yes    | yes       |
+| Robust against outliers               |          | yes  | no              | yes    | yes       |
+
+### Storage Rules
+
+| mean ~ median ~ mode | symmetric    |
+|----------------------|--------------|
+| mean > median > mode | left-skewed  |
+| mean < median < mode | right-skewed |
+
+[Back to Table of Contents](../)

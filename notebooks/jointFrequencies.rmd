@@ -1,0 +1,17 @@
+---
+title: "Joint Frequencies"
+output: html_notebook
+---
+
+- The absolute frequency hij = h(ai, bj) of the combination (ai, bj), i = 1, … , k, j = 1, … , m, corresponds to the number of pairs(xi, yj) of the original list that match (ai, bj)
+- Joint distributions =  values hij i = 1, … , k, j = 1, … , m
+- the data on the joint absolute frequencies can be summarized in a contingency table:
+```{r}
+x <- matrix(c(1,4,7,4,0,8,9,4,6,3,2,2,5,7,5,6), byrow = TRUE, nrow = 4)
+addmargins(x)
+```
+- the sum of the rows and columns are called the marginal absolute frequencies
+- the same can be done with the relative frequencies, which can be calculated that way: fij = hij / n
+- note that k is the number of rows and m is the number of columns
+
+[Back to Table of Contents](../)

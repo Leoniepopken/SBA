@@ -13,8 +13,23 @@ _Note:_ This website is a Work-In-Progress. If you feel like someting is missing
 
 #### Summaries
 - Descriptive Statistics
-  1. [Basic Concepts of Statistics](./notebooks/basic-concepts.nb.html)
-  2. More are on the way
+  1.  [Basic Concepts of Statistics](./notebooks/basic-concepts.nb.html)
+  2.  [How to obtain data](./notebooks/How-to-obtain-data.nb.html)
+  3.  [Feature Types and Scales](./notebooks/feature-types-and-scales.nb.html)
+  4.  [Frequencies](./notebooks/frequencies.nb.html)
+  5.  [Graphical Representations](./notebooks/graphicalRepresentation.nb.html)
+  6.  [Cumulative Frequencies](./notebooks/cumulative-frequencies.nb.html)
+  7.  [Central tendency measures](./notebooks/centraltendencymeasure.nb.html)
+  8.  [Measurement of dispersion](./notebooks/MeasuresOfDispersion.nb.html)
+  9.  [Joint Frequencies](./notebooks/jointFrequencies.nb.html)
+  10. [Conditional Frequencies](./notebooks/conditionalFrequencies.nb.html)
+  11. [Chi-squarred Coefficient](./notebooks/chiSquared.nb.html)
+  12. [Contingency Coefficient](./notebooks/contingencyCoefficient.nb.html)
+  13. [Empirical Covariance](./notebooks/empiricalCovariance.nb.html)
+  14. [Bravais-Pearson Correlation Coefficient](./notebooks/bravais-pearson.nb.html)
+  15. [Spearman‘s (Rank) Correlation Coefficient](./notebooks/spearman.nb.html)
+  16. [Method of Least Squares](./notebooks/leastSquares.nb.html)
+  17. [Coefficient of Determination and Residual Analysis](./notebooks/linearRegression.nb.html)
 - Explorative Statistics
 - Inductive Statistics
 

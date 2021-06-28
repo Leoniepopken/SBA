@@ -1,0 +1,11 @@
+---
+title: "Method of least squares"
+output: html_notebook
+---
+
+- calculation of least squares estimators <br> `b <- (sum(x*y) - n*(mean(y)*mean(x))) / (sum(x*x) - n*(mean(x)*mean(x)))`
+<br> `a <- mean(y) - b*mean(x)`
+- calculation of predicted value of Y for any value of X <br> `a + b * x`
+- calculation of residuals (errors) <br>residuals <- `y - Y`
+
+[Back to Table of Contents](../)

@@ -1,0 +1,59 @@
+---
+title: "Graphical Representations"
+output: html_notebook
+---
+
+### Bar diagrams
+- If the number k of the different realizations is small
+
+#### - absolute frequency
+`plot(table(Data), ylab = "Y-Label")`
+
+#### - relative frequency
+`plot(prop.table(Data), ylab = "Label")`
+
+### Column charts
+- An often even clearer variant (in comparisson to bar diagramms) (also for small k)
+
+#### - absolute frequency
+`barplot(table(Data), ylab = "Label", col = colour)`
+
+#### - relative frequency
+`barplot(prop.table(Data), ylab = "Label", col = colour)`
+
+### Bar charts
+#### - absolute frequency
+`par(mar = c(number of lines of margin to be specified on the four sides of the plot))`
+`barplot(table(Data), xlab = "Beschriftung", horiz = TRUE, las = 1, col = blues9)`
+
+#### - relative frequency
+`par(mar = c(number of lines of margin to be specified on the four sides of the plot))`
+`barplot(prop.table(Data), xlab = "Label", horiz = TRUE, las = 1, col = blues9)`
+
+### pie charts
+- also for small k <br>
+- Disadvantages: <br>
+    -  no direct reading of relative / absolute frequencies possible
+    - optically difficult to detect (eye detects relative lengths more easily than relative areas)
+
+`pie(table(Data), col = blues9)`
+
+### Histograms
+for large number of different expressions
+`histogram(Data, breaks = seq(), xlab = "Label", ylab = "Label")`
+
+### Two-dimensional bar charts
+- For small k and m
+- Structure: Enter absolute / relative frequencies for each combination of proficiencies
+- visualization in r:
+`
+library(epade)
+bar3d.ade(table(input), alpha = 0.2)
+`
+### Scatter plots
+- for two metric characteristics
+- in R: `plot(characterisicOne, characteristicTwo`
+- For more than two metric characteristics, you can form pairwise scatterplots and combine them into a scatter plot matrix
+
+[Back to Table of Contents](../)
+

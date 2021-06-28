@@ -1,0 +1,20 @@
+---
+title: "Linear Regression"
+output: html_notebook
+---
+
+- calculation of least squares estimator <br>
+`b <- (sum(x*y) - n*mean(y)*mean(x)) / (sum(x*x) - n*mean(x)*mean(x))` <br>
+`a <- mean(y) - b*mean(x)`
+- predicted value of Y for any value of X <br> `a + b * x`
+- total dispersion of yi
+- SQT <br> `sum((y - mean(y)) * (y - mean(y)))`
+- SQE <br> `sum((Y - mean(y)) * (Y - mean(y)))`
+- SQR <br>`sum((y - Y) * (y - Y))`
+- coefficient of determination R² as a measure for the quality of the model <br>`SQE / SQT`
+- Alternative Formula <br>`1 - (SQR / SQT)`
+- ### Properties of the coefficient of determination
+R² = 0 explained dispersion zero -> regression model is extremely bad
+R² = 1 explained dispersion = total dispersion -> regression model is perfectly fitted to data
+
+[Back to Table of Contents](../)

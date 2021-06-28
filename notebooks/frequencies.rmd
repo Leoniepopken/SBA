@@ -1,0 +1,12 @@
+---
+title: "Frequencies"
+output: html_notebook
+---
+
+- Calculation of absolute frequencies <br> `table(x)`
+- Calculation of relative frequencies <br>`prop.table(table(x))`
+- marginal frequncies <br>`addmargins(x)`
+- classification can be done with the functions cut() and seq(). cut() creats the groups, seq() creats the boarders, from which to which the Groups should be made
+
+---
+[Back to Table of Contents](../)
