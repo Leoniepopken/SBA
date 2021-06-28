@@ -1,0 +1,21 @@
+---
+title: "The Laplace Probability"
+output: html_notebook
+---
+##### Recap: [Random Events](./path/to/random/events)
+- a collection of outcomes of a random trial is called *(random) event*.
+- Events are **subsets of the sample space $\Omega$**
+
+### Laplace experiments
+- In a finitely sample space $\Omega$ with finitely many outcomes {$\omega_1,...,\omega_n$}
+- A Laplace experiment is a random experiment in which all possible outcomes *have the same* probability.
+- Examples:
+  - Tossing a coin: $\Omega =$ {Head, Tail}.    probability: $\frac{1}{2}$
+
+
+### Laplace probability
+- Calculate the probability $P(A)$ of an event $A \subseteq \Omega$ as:
+- $P(A) = \frac{\text{number of outcomes for which event A occurs}}{\text{number of all possible outcomes}} = \frac{|A|}{|\Omega|}$
+
+---
+[Back to Table of Contents](../)

@@ -1,0 +1,29 @@
+---
+title: "Concept of Objective Probability"
+output: html_notebook
+---
+
+*Probabilities with different probable outcomes*
+
+> Interpret the limit of relative frequencies of an event  as its probability
+
+### Probabilities and relative frequency
+- **Idea**: Define probabilities as *limits of relative frequencies*
+  - _Informal:_ Conduct the experiment $n$ times independently and check how often the desired outcome $\omega$ was thrown. Then divide it by $n$ and you obtain the relative frequency for $\omega$. *Note:* the larger $n$, the more precise the relative frequency (and therefore the probability)
+
+```{r}
+plot(c(1:20), c(1,1,.67,.75,.8,.67,.625,.56,.6,.55,.5,.46,.43,.47,.44,.47,.44,.47,.5,.5), xlab = "Number of repetitions", ylab="relative frequency", xlim = c(1, 20), ylim = c(0,1))
+```
+Above you can see how the relative frequencies converge over larger repetitions to $0.5$
+
+### The objectivist concept of probability
+
+In practice we can now approximate the probabilities of events well if we perform enough repetitions.
+
+> Calculation rules for Laplace probablilties are also valid for the now following objective probabilities
+
+**Now:** The *probability of each event $A$* can be calculated from the probabilities of the contained outcomes $\omega$
+
+
+---
+[Back to Table of Contents](../)
