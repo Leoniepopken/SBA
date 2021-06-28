@@ -1,0 +1,57 @@
+---
+title: "Conditional Probabilities"
+output: html_notebook
+---
+
+Recap: [Conditional Frequencies](https://leoniepopken.github.io/SBA/notebooks/conditionalFrequencies.nb.html)
+
+- When considering conditional frequencies, *additional information* can change the **relative frequencies**
+  - So can the probabilities for the occurrence of events change, when additional information is received. $\rightarrow$ **Conditional probabilities**
+
+#### General Formula:
+- If $B \subseteq \Omega$ is an event with $P(B > 0$, then the conditional probability of the event $A \subseteq \Omega$ given (the condition) B is given by:
+  \[P(A|B) = \frac{|A \cap B|}{|B|}\]
+  
+**Alternative** calculation methods for the conditional probability:
+
+- $P(B) = \frac{|B|}{|\Omega|} \rightarrow |B| = P(B) \cdot |\Omega|$
+- $P(A|B) = \frac{|A \cap B|}{|B|}  \rightarrow |A \cap B| =  P(A \cap B) \cdot |Omega|$
+
+### Calculation Rules
+
+> The [*calculation rules* for probabilities](https://leoniepopken.github.io/SBA/notebooks/Conditional-Probability-RUles.nb.html) carry over to conditional probabilities
+
+##### Rule 1: Conditional probabilities are numbers between 0 and 1
+
+- $0 \le P(A|B) \le 1 \: \: \: \forall A,B \subseteq \Omega \text{ with } P(B) > 0$
+
+##### Rule 2: The impossible event $\varnothing$ has conditional probability $0$
+
+- $P(\varnothing|B) =  0 \:\:\: \forall B \subseteq |Omega \text{ with } P(B) > 0$
+
+##### Rule 3: If $A \subseteq C$ holds, then event $C$ has at least the same conditional probability as event $A$
+
+- $\text{For all } B \subseteq \Omega \text{ with } P(B) > 0 \text{ it holds that } P(A|B) \le P(C|B) \text{ if }A \subseteq C$
+
+##### Rule 4: Calculation fo the conditional probability of the complementary event
+
+- $P(\bar{A}|B) = 1 - P(A|B) \text{ for all } B \subseteq \Omega \text{ with } P(B) > 0$
+
+##### Rule 5: Addition rule (to calculate the conditional probability of the union)
+
+- $P(A \cup C|B) = P(A|B) + P(C|B) - P(A \cap C | B) \text{ for all } B \subseteq |Omega \text{ with } P(B) > 0$
+
+
+---
+
+#### Rule 6: Product Rule
+
+- $P(A \cap B) = P(A|B) \cdot P(B) \: \: \: \forall A,B, \subseteq \Omega$ with $P(B) > 0$
+
+#### Rule 7: Law of total probability
+
+- If $\Omega = B_{1} \dot{\cup}B_2\dot{\cup}\dots \dot{\cup} B_k$ is a *partition of the sample space into disjoint events*, then for e very event $A \subseteq \Omega$:
+  - $P(A) = \sum_{i = 1}^{k} P(A|B_i) \cdot P(B_i)$
+  
+---
+[Back to Table of Contents](../)

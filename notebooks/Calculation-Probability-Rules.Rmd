@@ -1,0 +1,27 @@
+---
+title: "Conditional Probability Rules"
+output: html_notebook
+---
+
+#### Rule 1: Conditional probabilities are numbers between 0 and 1
+
+- $0 \le P(A|B) \le 1 \: \: \: \forall A,B \subseteq \Omega \text{ with } P(B) > 0$
+
+#### Rule 2: The impossible event $\varnothing$ has conditional probability $0$
+
+- $P(\varnothing|B) =  0 \:\:\: \forall B \subseteq |Omega \text{ with } P(B) > 0$
+
+#### Rule 3: If $A \subseteq C$ holds, then event $C$ has at least the same conditional probability as event $A$
+
+- $\text{For all } B \subseteq \Omega \text{ with } P(B) > 0 \text{ it holds that } P(A|B) \le P(C|B) \text{ if }A \subseteq C$
+
+#### Rule 4: Calculation fo the conditional probability of the complementary event
+
+- $P(\bar{A}|B) = 1 - P(A|B) \text{ for all } B \subseteq \Omega \text{ with } P(B) > 0$
+
+#### Rule 5: Addition rule (to calculate the conditional probability of the union)
+
+- $P(A \cup C|B) = P(A|B) + P(C|B) - P(A \cap C | B) \text{ for all } B \subseteq |Omega \text{ with } P(B) > 0$
+
+---
+[Back to Table of Contents](../)

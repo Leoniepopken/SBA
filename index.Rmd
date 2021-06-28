@@ -1,13 +1,15 @@
 ---
 title: "SBA Resources"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 Welcome to the **unofficial** Website for Statistics for Business Administration.
 
-Here you can find an overview over most of the formulas that are provided in the lecture together with explainations and examples.
+Here you can find an overview over most of the formulas that are provided in the lecture together with explanations and examples.
 
-_Note:_ This website is a Work-In-Progress. If you feel like someting is missing [tell us](https://github.com/Leoniepopken/SBA/issues), write us via WhatsApp or add it yourself!
+_Note:_ This website is a Work-In-Progress. If you feel like something is missing [tell us](https://github.com/Leoniepopken/SBA/issues), write us via WhatsApp or add it yourself!
 
 ### Table of Contents
 
@@ -30,6 +32,10 @@ _Note:_ This website is a Work-In-Progress. If you feel like someting is missing
   15. [Spearman‘s (Rank) Correlation Coefficient](./notebooks/spearman.nb.html)
   16. [Method of Least Squares](./notebooks/leastSquares.nb.html)
   17. [Coefficient of Determination and Residual Analysis](./notebooks/linearRegression.nb.html)
+  18. [Laplace Probability](./notebooks/Laplace-Probabilities.nb.html)
+  19. [Calculation Rules for Probabilities](./notebooks/Calculation-Probability-Rules.nb.html)
+  20. [Concept of Objective Probability](./notebooks/Concept-of-Objective-Probability.nb.html)
+  21. [Conditional Probabilities](./notebooks/Conditional-Probabilities.nb.html)
 - Explorative Statistics
 - Inductive Statistics
 
