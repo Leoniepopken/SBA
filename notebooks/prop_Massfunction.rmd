@@ -1,0 +1,11 @@
+---
+title: "Probability mass function"
+output: html_notebook
+---
+
+The probability mass function assigns a probability P(X = x) to each real number x ∈ ℝ:
+
+The probability mass function f: ℝ ⟶ [0,1] of a discrete random variable X with support T = {x1, 𝑥x2 ... , xk, ... } is defined as <br>
+f(x) = P(X = xi) = pi if x = xi ∈ {x1...xk} and 0, otherwise.
+
+[Back to Table of Contents](../)

@@ -1,0 +1,34 @@
+---
+title: "Central tendency measures"
+output: html_notebook
+---
+
+### Mode
+A value x with the highest probability $f(x) = P(X = x)$ is called mode of the random variable X (resp. its distribution)
+
+### Quantiles and median
+Let 0 < p < 1. Every value $\tilde{x_p}$ for which the random variable X
+- takes on a value less or equal $\tilde{x_p}$ with probability of at least p an
+- takes on a value greater or equal $\tilde{x_p}$ with probability of at least 1 - p <br>
+is called ***p-quantile*** of the random variable X <br>
+For p = 0.5 the 50%-quantile $\tilde{x_p} = \tilde{x_0.5}$ is called the median
+
+### Expected value
+The ***expected value*** is the most important location measure for ***metric*** discrete random variables
+
+$$\mu = E(x) = x_1p_1 + ... + x_kp_k + ... = \sum\limits_{i \ge 1} x_ip_i$$
+
+#### Interpretation of the expected value
+Matching the analogy of expected value and [arithmetic mean](./centraltendencymeasure.nb.html), we can observe the following frequency interpretation of the expected value: <br>
+Let the random trial underlying the metric random variable X be performed n-times independently, observing the n realizations $\hat{x_1},...,\hat{x_n}$ of X.
+Then for large 𝑛𝑛, the arithmetic mean $\overline{x}$ of $\hat{x_1},...,\hat{x_n}$ is close to $\mu = E(X)$ with high probability.
+
+E(X) can be interpreted as the value that results on average
+if we repeat the random process often enough
+
+#### Properties of the expected value
+- $E(X+Y) = E(X) + E(Y)$
+- $E(a_1X_1 + ... + a_nX_n = a_1E(X_1) + ... + a_nE(X_n)$
+- For independent metric random variables X and Y it holds that $E(X * Y) = E(X) * E(Y)$
+
+[Back to Table of Contents](../)

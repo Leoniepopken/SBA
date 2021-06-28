@@ -54,4 +54,8 @@ Recap: [Conditional Frequencies](https://leoniepopken.github.io/SBA/notebooks/co
   - $P(A) = \sum_{i = 1}^{k} P(A|B_i) \cdot P(B_i)$
   
 ---
+
+### Independence
+Two events A and B are stochastically independent, if P(A and B) = P(A) * P(B)
+
 [Back to Table of Contents](../)

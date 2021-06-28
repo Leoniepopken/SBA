@@ -1,0 +1,20 @@
+---
+title: "Distribution Function"
+output: html_notebook
+---
+
+- If the discrete random variable X is at least ordinally scaled, we can define the distribution function of X similarly to the empirical distribution function of a feature/characteristic
+- For this, we assume that the values $x_1, x_2, ... , x_k, ...$ in the support of X are already sorted in ascending
+order (i.e. $x_1 < x_2 < ... < x_k < ...$)
+
+$$F(x) = P(X \le x) = \sum\limits_{i:x_i \le x} f(x_i) = \sum\limits_{i:x_i \le x} p_i$$
+
+- F(x) corresponds exactly to the probability that the value of the random variable X is at most x.
+
+#### Properties
+- The function F is a monotonically increasing step function
+- Jump of height $p_i = f(x_i)$ at $x_i$
+- At jump points, the upper value ("stair edge") is the corresponding function value
+- F(x) = 0 for all $x < x_1$
+
+[Back to Table of Contents](../)
