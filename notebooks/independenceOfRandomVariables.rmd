@@ -1,0 +1,18 @@
+---
+title: "Independence of Random Variables"
+output: html_notebook
+---
+
+Two discrete random variables X and Y with support $T_X = {x_1, x_2, \dots, x_k, \dots }$ and
+$T_Y = {y_1, y_2, \dots, y_k, \dots }$ are called (stochastically) independent if for every x_i \in T_X and every Y_i \in T_Y:
+
+$$P(X = x_i, Y = y_i) = P(X = x_i) * P(Y= y_i$$
+
+- Hence: X and Y are independent if all pairs of events ${X = x_i}$ and ${Y = y_i}$ are independent
+
+<br>
+More generally: <br>
+If the discrete random variables X and Y are independent, then for any sets $M_1, M_2 \in R$ the events ${X \in M_1} and {Y \in M_2}$ are also independent, i.e. it holds that $P(X \in M_1, Y \in M_2) = P(X \in M_1) * P(Y \in M_2)$
+
+
+[Back to Table of Contents](../)

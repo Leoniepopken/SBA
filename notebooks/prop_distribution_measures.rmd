@@ -1,0 +1,26 @@
+---
+title: "Distribution measures for discrete random variables"
+output: html_notebook
+---
+
+### Variance
+The variance of a metric discrete random variable X with support $T = {x_1, x_2, \dots, x_k, \dots}$, probability distribution $p_1, p_2, \dots, p_k, \dots$ and expected value \mu is given by
+
+$$o^2 = Var(X) = \sum_{i \ge 1} (x_i - \mu)^2p_i$$
+
+The variance corresponds to the expected squared deviation of the random variable X
+from its expected value <br>
+Alternative Formula:
+
+$$o^2 = Var(X) = E(X-\mu)^2$$
+
+The standard deviation is the square root of the variance:
+$$o = +\sqrt{Var(X)}$$
+
+#### Frequency interpretation of the variance
+- Var(X) can be interpreted as the average squared deviation from the arithmetic mean that results when we repeat the random process often enough
+#### Properties of the variance
+- Displacement rule: $Var(X) = E(X^2) - (E(X))^2 = E(X^2) - \mu^2$
+- For independent metric random variables X and Y: $Var(X+Y) = Var(X) + Var(Y)$
+- For independent metric random variables X and Y and arbitrary real numbers $a_1, \dots, a_n$: $Var(a_1X_1 + \dots + a_nX_n) = a_1^2Var(X_1) + \dots + a_n^2Var(X_n)$
+[Back to Table of Contents](../)

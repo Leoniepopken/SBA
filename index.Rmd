@@ -39,7 +39,10 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   4. [Conditional Probabilities](./notebooks/Conditional-Probabilities.nb.html)
   5. [Distribution Function(s)](./notebooks/distributionFunction.nb.html)
   6. [Probability Mass Function](./notebooks/prop_Massfunction.nb.html)
-  7. [Central tendency measures](./notebooks/central_tendency.nb.html)
+  7. [Central tendency measures for discrete random variables](./notebooks/central_tendency.nb.html)
+  8. [Distribution measures for discrete random variables](./notebooks/prop_distribution_measures.nb.html)
+  9. [Binomial Distribution](./notebooks/binominal_Distri.nb.html)
+  10. [(In)dependence of random variables](./notebooks/independenceOfRandomVariables.nb.html)
 - Inductive Statistics
 
 #### Other (Useful Documents)

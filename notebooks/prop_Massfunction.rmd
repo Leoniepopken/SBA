@@ -5,7 +5,21 @@ output: html_notebook
 
 The probability mass function assigns a probability P(X = x) to each real number x ∈ ℝ:
 
-The probability mass function f: ℝ ⟶ [0,1] of a discrete random variable X with support T = {x1, 𝑥x2 ... , xk, ... } is defined as <br>
-f(x) = P(X = xi) = pi if x = xi ∈ {x1...xk} and 0, otherwise.
+The probability mass function f: ℝ ⟶ [0,1] of a discrete random variable X with support $T = {x_1, x_2 ... , x_k, ... }$ is defined as <br>
+$$f(x) = \begin{cases}
+P(X = x_i) = p_i ,& x = x_i \in {x_1,...x_k,...} \\
+0  ,& otherwise
+\end{cases} $$
+
+---
+#### For the [binomial distribution](./binominal_Distri.nb.html)
+
+A (discrete) random variable X is called ***binomially distibuted with parameters n and $\pi$*** (for short: ***B(n, $\pi$)-distributed*** or ***X ~ B(n, $\pi$), if it has the following probability mass function:
+
+$$f(x) = \begin{cases}
+\binom{n}{x}\pi^x(1-\pi)^{n-x}
+,& x = 0, 1, \dots, n\\
+0  ,& otherwise
+\end{cases} $$
 
 [Back to Table of Contents](../)

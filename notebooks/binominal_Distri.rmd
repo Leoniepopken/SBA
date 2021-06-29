@@ -1,0 +1,22 @@
+---
+title: "Binominal Distribution"
+output: html_notebook
+---
+
+A (discrete) random variable X is called ***binomially distibuted with parameters n and $\pi$*** (for short: ***B(n, $\pi$)-distributed*** or ***X ~ B(n, $\pi$)***, if it has the following [probability mass function](./prop_Massfunction.nb.html):
+
+$$f(x) = \begin{cases}
+\binom{n}{x}\pi^x(1-\pi)^{n-x}
+,& x = 0, 1, \dots, n\\
+0  ,& otherwise
+\end{cases} $$
+
+The B(n, $\pi$)-distribution results when, given n [independent](./independenceOfRandomVariables.nb.html) repetitions of a Bernoulli experiment
+with $\Omega = {\omega_1, \omega_2} and P(\omega = \omega_1) = \pi$, the number of occurences of the outcome $\omega_1$ is counted.
+
+#### Properties
+- [Expected value](./central_tendency.nb.html) and [variance](./prop_distribution_measures.nb.html) of the binomial distribution: $E(X) = n\pi$ and $Var(X) = n\pi(1-\pi)$
+- Addition of independent binomially distributed random variables: If $X ~ B(n, \pi)$ and $Y ~ B(m, \pi)$ and X, Y are independent, then the sum X + Y is binomially distributed with parameters n + m and \pi:
+$X + Y ~ B(n + m, \pi)$
+
+[Back to Table of Contents](../)
