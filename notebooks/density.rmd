@@ -20,4 +20,11 @@ $$f(x) = \begin{cases}
 0  ,& otherwise
 \end{cases} $$
 
+#### For [the exponential distribution](./exponentialDistribution.nb.html)
+
+$$f(x) = \begin{cases}
+\lambda e^{-\lambda x} ,& x \ge 0\\
+0  ,& x < 0
+\end{cases} $$
+
 [Back to Table of Contents](../)

@@ -17,4 +17,25 @@ $$F(x) = P(X \le x) = \sum\limits_{i:x_i \le x} f(x_i) = \sum\limits_{i:x_i \le 
 - At jump points, the upper value ("stair edge") is the corresponding function value
 - F(x) = 0 for all $x < x_1$
 
+---
+
+#### For a continuos variable with density f
+$$F(x) = P(X \le x) = \int_{-\infty}^{x} f(x) \; dx$$
+[Back to Table of Contents](../)
+
+#### For [continous uniform distribution](./uniformDistribution.nb.html)
+
+$$F(x) = \int_{- \infty}^{x} f(t) \; dt = \begin{cases}
+0 ,& x < a\\
+\frac{x - a}{b - a} ,& a \le x \le b \\
+1 ,& x > b
+\end{cases} $$
+
+#### For the exponential distribution
+$$F(x) = \int_{- \infty}^{x} f(t) \; dt = \begin{cases}
+\lambda e^{-\lambda x} ,& x \ge 0\\
+0  ,& x < 0
+\end{cases} $$
+
+
 [Back to Table of Contents](../)

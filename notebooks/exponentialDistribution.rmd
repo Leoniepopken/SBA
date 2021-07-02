@@ -1,0 +1,21 @@
+---
+title: "Exponential distribution"
+output: html_notebook
+---
+
+- results from the modeling of durations where time is measured - at least approximately - continuously
+
+#### Example:
+Lifetime of a product or technical system
+
+#### Condition
+Remaining duration is not dependent on the time already elapsed (Probability of failure of the product / technical system independent of its age)
+
+#### [Density](./density)
+
+$$f(x) = \begin{cases}
+\lambda e^{-\lambda x} ,& x \ge 0\\
+0  ,& x < 0
+\end{cases} $$
+
+[Back to Table of Contents](../)

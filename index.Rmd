@@ -37,7 +37,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   2. [Calculation Rules for Probabilities](./notebooks/Calculation-Probability-Rules.nb.html)
   3. [Concept of Objective Probability](./notebooks/Concept-of-Objective-Probability.nb.html)
   4. [Conditional Probabilities](./notebooks/Conditional-Probabilities.nb.html)
-  5. [Distribution Function(s)](./notebooks/distributionFunction.nb.html)
+  5. [Distribution Function](./notebooks/distributionFunction.nb.html)
   6. [Probability Mass Function](./notebooks/prop_Massfunction.nb.html)
   7. [Central tendency measures for discrete random variables](./notebooks/central_tendency.nb.html)
   8. [Distribution measures for discrete random variables](./notebooks/prop_distribution_measures.nb.html)
@@ -47,6 +47,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   12. Continous random variables: coming soon!
   13. [Density](./notebooks/density.nb.html)
   14. [Continuous uniform distribution](./notebooks/uniformDistribution.nb.html)
+  15. [Exponential distribution](./notebooks/exponentialDistribution.nb.html)
 - Inductive Statistics
 
 #### Other (Useful Documents)
