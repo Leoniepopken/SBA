@@ -1,0 +1,11 @@
+---
+title: "The (probability) density"
+output: html_notebook
+---
+
+A random variable X is called continuous, if there exists an integrable function $f: R -> R$ with $f(x) \ge 0$ for all $x in R$ such that for every interval [a,b]:
+
+$$P(a \le X \le b) = \int_{a}^{b} f(x) \; dx$$
+
+The function f is called the (probability) density of X. The set
+$T = {x \in R: f(x) > 0}$ is called the support of X resp. f.
