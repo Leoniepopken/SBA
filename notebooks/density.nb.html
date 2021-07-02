@@ -233,11 +233,16 @@ pre code {
 \lambda e^{-\lambda x} ,&amp; x \ge 0\\
 0  ,&amp; x &lt; 0
 \end{cases} \]</span></p>
+</div>
+<div id="for-the-normal-distribution" class="section level3">
+<h3>For <a href="./normalDistribution.nb.html">the normal distribution</a></h3>
+<p><span class="math inline">\(f(x) = \frac{1}{\sqrt(2 \pi o)} exp(- \frac{(x - \mu)^2}{2o^2})\)</span></p>
+<p>specifically for <span class="math inline">\(\mu = 0\)</span> and <span class="math inline">\(o^2 = 1\)</span>, the density <span class="math inline">\(\phi\)</span> is: <span class="math inline">\(\frac{1}{\sqrt(2\pi)} exp(-0.5x^2)\)</span></p>
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpBIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGNhbGxlZCBjb250aW51b3VzLCBpZiB0aGVyZSBleGlzdHMgYW4gaW50ZWdyYWJsZSBmdW5jdGlvbiAkZjogUiAtPiBSJCB3aXRoICRmKHgpIFxnZSAwJCBmb3IgYWxsICR4IGluIFIkIHN1Y2ggdGhhdCBmb3IgZXZlcnkgaW50ZXJ2YWwgW2EsYl06DQoNCiQkUChhIFxsZSBYIFxsZSBiKSA9IFxpbnRfe2F9XntifSBmKHgpIFw7IGR4JCQNCg0KVGhlIGZ1bmN0aW9uIGYgaXMgY2FsbGVkIHRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkgb2YgWC4gVGhlIHNldA0KJFQgPSB7eCBcaW4gUjogZih4KSA+IDB9JCBpcyBjYWxsZWQgdGhlIHN1cHBvcnQgb2YgWCByZXNwLiBmLg0KDQotLS0NCg0KIyMjIyBGb3IgW2NvbnRpbnVvdXMgdW5pZm9ybSBkaXN0cmlidXRpb25dKC4vdW5pZm9ybURpc3RyaWJ1dGlvbik6DQoNCiQkZih4KSA9IFxiZWdpbntjYXNlc30NClxmcmFjezF9e2IgLSBhfQ0KLCYgYSBcbGUgeCBcbGUgYlxcDQowICAsJiBvdGhlcndpc2UNClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgRm9yIFt0aGUgZXhwb25lbnRpYWwgZGlzdHJpYnV0aW9uXSguL2V4cG9uZW50aWFsRGlzdHJpYnV0aW9uLm5iLmh0bWwpDQoNCiQkZih4KSA9IFxiZWdpbntjYXNlc30NClxsYW1iZGEgZV57LVxsYW1iZGEgeH0gLCYgeCBcZ2UgMFxcDQowICAsJiB4IDwgMA0KXGVuZHtjYXNlc30gJCQNCg0KW0JhY2sgdG8gVGFibGUgb2YgQ29udGVudHNdKC4uLyk=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpBIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGNhbGxlZCBjb250aW51b3VzLCBpZiB0aGVyZSBleGlzdHMgYW4gaW50ZWdyYWJsZSBmdW5jdGlvbiAkZjogUiAtPiBSJCB3aXRoICRmKHgpIFxnZSAwJCBmb3IgYWxsICR4IGluIFIkIHN1Y2ggdGhhdCBmb3IgZXZlcnkgaW50ZXJ2YWwgW2EsYl06DQoNCiQkUChhIFxsZSBYIFxsZSBiKSA9IFxpbnRfe2F9XntifSBmKHgpIFw7IGR4JCQNCg0KVGhlIGZ1bmN0aW9uIGYgaXMgY2FsbGVkIHRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkgb2YgWC4gVGhlIHNldA0KJFQgPSB7eCBcaW4gUjogZih4KSA+IDB9JCBpcyBjYWxsZWQgdGhlIHN1cHBvcnQgb2YgWCByZXNwLiBmLg0KDQotLS0NCg0KIyMjIyBGb3IgW2NvbnRpbnVvdXMgdW5pZm9ybSBkaXN0cmlidXRpb25dKC4vdW5pZm9ybURpc3RyaWJ1dGlvbik6DQoNCiQkZih4KSA9IFxiZWdpbntjYXNlc30NClxmcmFjezF9e2IgLSBhfQ0KLCYgYSBcbGUgeCBcbGUgYlxcDQowICAsJiBvdGhlcndpc2UNClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgRm9yIFt0aGUgZXhwb25lbnRpYWwgZGlzdHJpYnV0aW9uXSguL2V4cG9uZW50aWFsRGlzdHJpYnV0aW9uLm5iLmh0bWwpDQoNCiQkZih4KSA9IFxiZWdpbntjYXNlc30NClxsYW1iZGEgZV57LVxsYW1iZGEgeH0gLCYgeCBcZ2UgMFxcDQowICAsJiB4IDwgMA0KXGVuZHtjYXNlc30gJCQNCg0KIyMjIEZvciBbdGhlIG5vcm1hbCBkaXN0cmlidXRpb25dKC4vbm9ybWFsRGlzdHJpYnV0aW9uLm5iLmh0bWwpDQokZih4KSA9IFxmcmFjezF9e1xzcXJ0KDIgXHBpIG8pfSBleHAoLSBcZnJhY3soeCAtIFxtdSleMn17Mm9eMn0pJA0KDQpzcGVjaWZpY2FsbHkgZm9yICRcbXUgPSAwJCBhbmQgJG9eMiA9IDEkLCB0aGUgZGVuc2l0eSAkXHBoaSQgaXM6ICRcZnJhY3sxfXtcc3FydCgyXHBpKX0gZXhwKC0wLjV4XjIpJA0KDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ==</div>
 
 
 

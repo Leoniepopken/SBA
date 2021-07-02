@@ -1,0 +1,11 @@
+---
+title: "The normal distribution"
+output: html_notebook
+---
+
+[Density](./density.nb.html)
+$f(x) = \frac{1}{\sqrt(2 \pi o)} exp(- \frac{(x - \mu)^2}{2o^2})$
+
+specifically for $\mu = 0$ and $o^2 = 1$, the density $\phi$ is: $\frac{1}{\sqrt(2\pi)} exp(-0.5x^2)$
+
+[Back to Table of Contents](../)
