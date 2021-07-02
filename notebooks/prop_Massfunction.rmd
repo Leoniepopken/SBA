@@ -22,4 +22,12 @@ $$f(x) = \begin{cases}
 0  ,& otherwise
 \end{cases} $$
 
+#### For the [Poisson distribution](./poissonDistri.nb.html)
+
+$$f(x) = \begin{cases}
+\frac{\lambda^x}{x!} e^{-\lambda}
+,& x \in {0, 1, \dots}\\
+0  ,& otherwise
+\end{cases} $$
+
 [Back to Table of Contents](../)

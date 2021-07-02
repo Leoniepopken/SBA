@@ -1,0 +1,32 @@
+---
+title: "The Poisson distribution"
+output: html_notebook
+---
+
+#### Asumptions:
+- Two incidents cannot occur exactly at the same time
+- The probability of an incident occurring during a small time interval of length $\Delta t$ is approximately $\lambda * \Delta t$
+- The probability of occurrence of a certain number of incidents in a time interval depends only on its length, but not on its
+position on the time axis
+- The numbers of incidents in two disjoint subintervals are [independent](./independenceOfRandomVariables.nb.html)
+
+#### Example:
+X = „Number of incidents occurring within the interval [0, 1] “
+
+[Mass function](./prop_Massfunction.nb.html):
+
+$$f(x) = \begin{cases}
+\frac{\lambda^x}{x!} e^{-\lambda}
+,& x \in {0, 1, \dots}\\
+0  ,& otherwise
+\end{cases} $$
+
+The Po($\lambda$)-distribution ist obtained by counting the number of (rare) incidents or events within a fixed time interval, where the probability that an incident occurs during a small time interval of lenth $\Delta t$ is approximately $\lambda * \Delta t$
+
+#### Properties
+- [Expected value](./central_tendency.nb.html) and [variance](./prop_distribution_measures.nb.html): $E(X) = \lambda = Var(X)$ (Equality of expected value and variance is typical for the Poisson distribution)
+-  If $X ~ Po(\lambda)$ and $Y ~ Po(\lambda ')$ and X, Y are [independent](./independenceOfRandomVariables.nb.html), then the sum X + Y is Poisson distributed with parameter $\lambda + \lambda '$: $X + Y ~ Po(\lambda + \lambda ')$
+- The shape of the probability histogram strongly depends on the intensity rate \lambda
+
+
+[Back to Table of Contents](../)
