@@ -1,0 +1,12 @@
+---
+title: "Continuous uniform distribution"
+output: html_notebook
+---
+
+[Density](./density.nb.html): $$f(x) = \begin{cases}
+\frac{1}{b - a}
+,& a \le x \le b\\
+0  ,& otherwise
+\end{cases} $$
+
+[Back to Table of Contents](../)

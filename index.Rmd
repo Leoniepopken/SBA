@@ -46,6 +46,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   11. [Poisson Distribution](./notebooks/poissonDistri.nb.html)
   12. Continous random variables: coming soon!
   13. [Density](./notebooks/density.nb.html)
+  14. [Continuous uniform distribution](./notebooks/uniformDistribution.nb.html)
 - Inductive Statistics
 
 #### Other (Useful Documents)

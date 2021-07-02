@@ -9,3 +9,15 @@ $$P(a \le X \le b) = \int_{a}^{b} f(x) \; dx$$
 
 The function f is called the (probability) density of X. The set
 $T = {x \in R: f(x) > 0}$ is called the support of X resp. f.
+
+---
+
+#### For [continuous uniform distribution](./uniformDistribution):
+
+$$f(x) = \begin{cases}
+\frac{1}{b - a}
+,& a \le x \le b\\
+0  ,& otherwise
+\end{cases} $$
+
+[Back to Table of Contents](../)
