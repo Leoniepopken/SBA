@@ -8,7 +8,7 @@ The ***mode*** of a continuous random variable is the maximum of it's [density](
 For the ***p-quantile*** it holds that $F(\tilde{x}_p) = P(X \le \tilde{x}_p)$ and $P(X \ge \tilde{x}_p) = 1 - p$
 If the distribution function 𝐹𝐹 is strictly monotonically increasing, p-quantiles and median are unique
 
-The ***expected value*** of a continuous random variable X with density f is given by $\mu = E(X) = $\int_{-\infty}^{\infty} x* f(x) \; dx$
+The ***expected value*** of a continuous random variable X with density f is given by $\mu = E(X) = \int_{-\infty}^{\infty} x* f(x) \; dx$
 
 The ***variance*** of a continuous random variable X with density f is given by $o^2 = Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 f(x) \; dx$
 

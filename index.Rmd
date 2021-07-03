@@ -14,7 +14,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
 ### Table of Contents
 
 #### Summaries
-- Descriptive Statistics
+- Descriptive Statistics and exploratory data analysis
   1.  [Basic Concepts of Statistics](./notebooks/basic-concepts.nb.html)
   2.  [How to obtain data](./notebooks/How-to-obtain-data.nb.html)
   3.  [Feature Types and Scales](./notebooks/feature-types-and-scales.nb.html)
@@ -32,7 +32,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   15. [Spearman‘s (Rank) Correlation Coefficient](./notebooks/spearman.nb.html)
   16. [Method of Least Squares](./notebooks/leastSquares.nb.html)
   17. [Coefficient of Determination and Residual Analysis](./notebooks/linearRegression.nb.html)
-- Probability Theory
+- Probability calculus
   1. [Laplace Probability](./notebooks/Laplace-Probabilities.nb.html)
   2. [Calculation Rules for Probabilities](./notebooks/Calculation-Probability-Rules.nb.html)
   3. [Concept of Objective Probability](./notebooks/Concept-of-Objective-Probability.nb.html)
@@ -50,7 +50,12 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   15. [Exponential distribution](./notebooks/exponentialDistribution.nb.html)
   16. [Central tendency and dispersion measures for continuous random variables](./notebooks/centralTendencyContinuous.nb.html)
   17. [The normal distribution](./notebooks/normalDistribution.nb.html)
-- Inductive Statistics
+- Statistical inference or inductive statistics
+  1. [Point estimation](./notebooks/point_estimation.nb.html)
+  2. [Unbiased estimators]
+  3. [Mean squared error or consistency]
+  4. [Construction of estimation functions]
+  5. [Interval estimation]
 
 #### Other (Useful Documents)
 1. [R Cheat Sheet](./pdfs/r-befehle.pdf) (german only)

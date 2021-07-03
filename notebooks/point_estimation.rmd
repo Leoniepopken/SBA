@@ -1,0 +1,35 @@
+---
+title: "Point estimation"
+output: html_notebook
+---
+
+We want to estimate an unknown parameter $\theta$ of the distribution of a characteristic/variable in a population <br>
+- To do this: draw random sample of size 𝒏𝒏 from the population <br>
+- We assume that $X_1, \dots, X_n$ are ***independent*** replications of the following random variable: X = „Value of the characteristic in a randomly selected statistical entity of the population.“ <br>
+<br><br>
+Now we want to infer the unknown parameter $\theta$ of the distribution of X <br>
+This is done by ***estimators*** or ***estimation statistics***: <br>
+- ***estimation function*** or estimation statistic for the parameter $\theta$  is a function $T = g(X_1,  \dots, X_n)$<br>
+- the ***estimator*** is the numerical value $t = g(x_1, \dots, x_n)$ resulting from the realizations $x_1, \dots, x_n$<br>
+- the value of $T = g(X_1,  \dots, X_n)$ is again a random variable<br>
+<br>
+
+---
+
+#### Estimators for the [expected value $\mu$ = E(X)](./central_tendency.nb.html)
+- $\overline{X} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n} Xi$
+- the estimator $\overline{x} = g(x_1,  \dots, x_n) = \frac{1}{n}\sum_{i = 1}^{n} xi$ corresponds to the arithmetic mean of the sample (sample mean)
+
+---
+
+#### Estimators for the [variance $o^2 = Var(X)$](./prop_distribution_measures.nb.html)
+- both $\tilde{S^2} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ and $S^2 = g(X_1,  \dots, X_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ are estimation functions of the variance
+- the estimators $\tilde{s^2} = g(x_1,  \dots, x_n) = \frac{1}{n}\sum_{i = 1}^{n}(x_i - \overline{x})^2$ and $s^2 = g(x_1,  \dots, x_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(x_i - \overline{x})^2$ correspond to the empirical variance and the sample variance
+
+---
+
+#### Estimators for the parameter $\pi$ (probability of occurrence) of a Bernoulli distribution
+- if X is a Bernoulli variable then $X_i \in {0,1}$ for all i = 1, ..., and $\overline{X} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n}X_i$ is an estimation function for the probability of occurrence
+- the estimator $\overline{x} = g(x_1,  \dots, x_n) = \frac{1}{n}\sum_{i = 1}^{n}x_i$ corresponds to the relative frequency of $x_i = 1$ in the sample
+
+[Back to Table of Contents](../)

@@ -17,8 +17,11 @@ $$o^2 = Var(X) = E(X-\mu)^2$$
 The standard deviation is the square root of the variance:
 $$o = +\sqrt{Var(X)}$$
 
+[Estimators](./point_estimation.nb.html): $\tilde{S^2} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ and $S^2 = g(X_1,  \dots, X_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(X_i - \overline{X})^2$
+
 #### Frequency interpretation of the variance
 - Var(X) can be interpreted as the average squared deviation from the arithmetic mean that results when we repeat the random process often enough
+
 #### Properties of the variance
 - Displacement rule: $Var(X) = E(X^2) - (E(X))^2 = E(X^2) - \mu^2$
 - For independent metric random variables X and Y: $Var(X+Y) = Var(X) + Var(Y)$

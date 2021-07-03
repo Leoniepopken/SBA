@@ -6,6 +6,8 @@ output: html_notebook
 ### Mode
 A value x with the highest probability $f(x) = P(X = x)$ is called mode of the random variable X (resp. its distribution)
 
+---
+
 ### Quantiles and median
 Let 0 < p < 1. Every value $\tilde{x_p}$ for which the random variable X
 - takes on a value less or equal $\tilde{x_p}$ with probability of at least p an
@@ -13,10 +15,14 @@ Let 0 < p < 1. Every value $\tilde{x_p}$ for which the random variable X
 is called ***p-quantile*** of the random variable X <br>
 For p = 0.5 the 50%-quantile $\tilde{x_p} = \tilde{x_0.5}$ is called the median
 
+---
+
 ### Expected value
 The ***expected value*** is the most important location measure for ***metric*** discrete random variables
 
 $$\mu = E(x) = x_1p_1 + ... + x_kp_k + ... = \sum\limits_{i \ge 1} x_ip_i$$
+
+[Estimators](./point_estimation.nb.html): $\overline{X} = g(x_1,  \dots, x_n) = \frac{1}{n}\sum_{i = 1}^{n} xi$
 
 #### Interpretation of the expected value
 Matching the analogy of expected value and [arithmetic mean](./centraltendencymeasure.nb.html), we can observe the following frequency interpretation of the expected value: <br>
