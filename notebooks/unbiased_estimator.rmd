@@ -1,0 +1,30 @@
+---
+title: "Unbiased estimators"
+output: html_notebook
+---
+
+An estimator $T = g(X_1,  \dots, X_n)$ for parameter $\theta$ is called ***unbiased*** if:
+
+$$E_\theta(T) = \theta$$
+
+where $E_\theta(T)$ denotes the expected value of T under the assumption that the true parameter value is $\theta$ <br>
+Thus: If we determine the expected value of the estimation statistic T under the assumption that the
+true parameter value is $\theta$, we get $\theta$ as the expected value. Value of $\theta$ is neither systematically overestimated nor underestimated
+
+---
+
+The ***bias*** of an estimator $T = g(X_1,  \dots, X_n) for parameter $\theta$ is given by
+
+$$Bias_\theta(T) = E_\theta(T) - \theta$$
+
+An estimator / estimation statistic T for a parameter $\theta$ is unbiased if and only if $Bias_\theta(T) = 0$ holds
+
+---
+
+The ***standard error*** of an unbiased estimator $T = g(X_1,  \dots, X_n)$ is given by its standard deviation:
+
+$$o_T = \sqrt{Var_\theta(T)}$$
+
+The standard error depends on the (unknown) distribution of X and needs to be estimated itself
+
+[Back to Table of Contents](../)
