@@ -1,0 +1,22 @@
+---
+title: "Mean squared error and consistency"
+output: html_notebook
+---
+
+The ***(expected) mean squared error*** incorporates both bias and variance. The (expected) mean squared error of an [estimator](./point_estimation.nb.html) $T = g(X_1, \dots, X_n)$ for the parameter $\theta$ is given by
+
+$$MSE_\theta(T) = E_\theta([T - \theta]^2)$$
+
+The mean squared error indicates the expected deviation between the estimated T and the true parameter value $\theta$
+
+- $MSE_\theta(T) = Var_\theta(T) + Bias_\theta(T)^2
+- if T is [unbiased](./unbiased_estimator.nb.html) then $MSE_\theta(T) = Var_\theta(T)$
+
+----
+
+An [estimator](./point_estimation.nb.html) $T = g(X_1, \dots, X_n)$ for the parameter $\theta$ is called ***consistent*** (in mean square), if
+
+$$MSE_\theta(T) = Var_\theta(T) + Bias_\theta(T)^2 -> 0 for n -> \infty$$
+
+
+[Back to Table of Contents](../)

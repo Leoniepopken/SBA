@@ -20,10 +20,13 @@ This is done by ***estimators*** or ***estimation statistics***: <br>
 - $\overline{X} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n} Xi$
 - the estimator $\overline{x} = g(x_1,  \dots, x_n) = \frac{1}{n}\sum_{i = 1}^{n} xi$ corresponds to the arithmetic mean of the sample (sample mean)
 
+This estimator is [unbiased](./unbiased_estimator.nb.html) and [consistent](./mean_squared_error_and_consistency.nb.html).
+
 ---
 
 #### Estimators for the [variance $o^2 = Var(X)$](./prop_distribution_measures.nb.html)
-- both $\tilde{S^2} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ and $S^2 = g(X_1,  \dots, X_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ are estimation functions of the variance
+- both $\tilde{S^2} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ and $S^2 = g(X_1,  \dots, X_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ are estimation functions of the variance. <br>For the first estimator the [bias](./unbiased_estimator.nb.html) is $-\frac{1}{n}o^2$. The second estimator is [unbiased](./unbiased_estimator.nb.html) and [consistent](./mean_squared_error_and_consistency.nb.html).
+
 - the estimators $\tilde{s^2} = g(x_1,  \dots, x_n) = \frac{1}{n}\sum_{i = 1}^{n}(x_i - \overline{x})^2$ and $s^2 = g(x_1,  \dots, x_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(x_i - \overline{x})^2$ correspond to the empirical variance and the sample variance
 
 ---
