@@ -9,6 +9,8 @@ order (i.e. $x_1 < x_2 < ... < x_k < ...$)
 
 $$F(x) = P(X \le x) = \sum\limits_{i:x_i \le x} f(x_i) = \sum\limits_{i:x_i \le x} p_i$$
 
+and $P(X \ge x) = 1 - P(X \le x) = 1 - F(x)$
+
 - F(x) corresponds exactly to the probability that the value of the random variable X is at most x.
 
 #### Properties

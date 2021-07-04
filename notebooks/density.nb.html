@@ -218,6 +218,8 @@ pre code {
 <p>A random variable X is called continuous, if there exists an integrable function <span class="math inline">\(f: R -&gt; R\)</span> with <span class="math inline">\(f(x) \ge 0\)</span> for all <span class="math inline">\(x in R\)</span> such that for every interval [a,b]:</p>
 <p><span class="math display">\[P(a \le X \le b) = \int_{a}^{b} f(x) \; dx\]</span></p>
 <p>The function f is called the (probability) density of X. The set <span class="math inline">\(T = {x \in R: f(x) &gt; 0}\)</span> is called the support of X resp. f.</p>
+<p>The density is the derivation of the <a href="./distributionFunction.nb.html">distribution function</a>. So if you want to calculate out of the density you have to build the indefinite integral of f(x)</p>
+<p>To be a density function, f(x) has to fulfill the following term: <span class="math inline">\(\int_{a}^{b} f(x) \; dx = 1\)</span></p>
 <hr />
 <div id="for-continuous-uniform-distribution" class="section level4">
 <h4>For <a href="./uniformDistribution">continuous uniform distribution</a>:</h4>
@@ -234,15 +236,15 @@ pre code {
 0  ,&amp; x &lt; 0
 \end{cases} \]</span></p>
 </div>
-<div id="for-the-normal-distribution" class="section level3">
-<h3>For <a href="./normalDistribution.nb.html">the normal distribution</a></h3>
-<p><span class="math inline">\(f(x) = \frac{1}{\sqrt(2 \pi o)} exp(- \frac{(x - \mu)^2}{2o^2})\)</span></p>
+<div id="for-the-normal-distribution" class="section level4">
+<h4>For <a href="./normalDistribution.nb.html">the normal distribution</a></h4>
+<p><span class="math display">\[f(x) = \frac{1}{\sqrt(2 \pi o)} exp(- \frac{(x - \mu)^2}{2o^2})\]</span></p>
 <p>specifically for <span class="math inline">\(\mu = 0\)</span> and <span class="math inline">\(o^2 = 1\)</span>, the density <span class="math inline">\(\phi\)</span> is: <span class="math inline">\(\frac{1}{\sqrt(2\pi)} exp(-0.5x^2)\)</span></p>
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpBIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGNhbGxlZCBjb250aW51b3VzLCBpZiB0aGVyZSBleGlzdHMgYW4gaW50ZWdyYWJsZSBmdW5jdGlvbiAkZjogUiAtPiBSJCB3aXRoICRmKHgpIFxnZSAwJCBmb3IgYWxsICR4IGluIFIkIHN1Y2ggdGhhdCBmb3IgZXZlcnkgaW50ZXJ2YWwgW2EsYl06DQoNCiQkUChhIFxsZSBYIFxsZSBiKSA9IFxpbnRfe2F9XntifSBmKHgpIFw7IGR4JCQNCg0KVGhlIGZ1bmN0aW9uIGYgaXMgY2FsbGVkIHRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkgb2YgWC4gVGhlIHNldA0KJFQgPSB7eCBcaW4gUjogZih4KSA+IDB9JCBpcyBjYWxsZWQgdGhlIHN1cHBvcnQgb2YgWCByZXNwLiBmLg0KDQotLS0NCg0KIyMjIyBGb3IgW2NvbnRpbnVvdXMgdW5pZm9ybSBkaXN0cmlidXRpb25dKC4vdW5pZm9ybURpc3RyaWJ1dGlvbik6DQoNCiQkZih4KSA9IFxiZWdpbntjYXNlc30NClxmcmFjezF9e2IgLSBhfQ0KLCYgYSBcbGUgeCBcbGUgYlxcDQowICAsJiBvdGhlcndpc2UNClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgRm9yIFt0aGUgZXhwb25lbnRpYWwgZGlzdHJpYnV0aW9uXSguL2V4cG9uZW50aWFsRGlzdHJpYnV0aW9uLm5iLmh0bWwpDQoNCiQkZih4KSA9IFxiZWdpbntjYXNlc30NClxsYW1iZGEgZV57LVxsYW1iZGEgeH0gLCYgeCBcZ2UgMFxcDQowICAsJiB4IDwgMA0KXGVuZHtjYXNlc30gJCQNCg0KIyMjIEZvciBbdGhlIG5vcm1hbCBkaXN0cmlidXRpb25dKC4vbm9ybWFsRGlzdHJpYnV0aW9uLm5iLmh0bWwpDQokZih4KSA9IFxmcmFjezF9e1xzcXJ0KDIgXHBpIG8pfSBleHAoLSBcZnJhY3soeCAtIFxtdSleMn17Mm9eMn0pJA0KDQpzcGVjaWZpY2FsbHkgZm9yICRcbXUgPSAwJCBhbmQgJG9eMiA9IDEkLCB0aGUgZGVuc2l0eSAkXHBoaSQgaXM6ICRcZnJhY3sxfXtcc3FydCgyXHBpKX0gZXhwKC0wLjV4XjIpJA0KDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpBIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGNhbGxlZCBjb250aW51b3VzLCBpZiB0aGVyZSBleGlzdHMgYW4gaW50ZWdyYWJsZSBmdW5jdGlvbiAkZjogUiAtPiBSJCB3aXRoICRmKHgpIFxnZSAwJCBmb3IgYWxsICR4IGluIFIkIHN1Y2ggdGhhdCBmb3IgZXZlcnkgaW50ZXJ2YWwgW2EsYl06DQoNCiQkUChhIFxsZSBYIFxsZSBiKSA9IFxpbnRfe2F9XntifSBmKHgpIFw7IGR4JCQNCg0KVGhlIGZ1bmN0aW9uIGYgaXMgY2FsbGVkIHRoZSAocHJvYmFiaWxpdHkpIGRlbnNpdHkgb2YgWC4gVGhlIHNldA0KJFQgPSB7eCBcaW4gUjogZih4KSA+IDB9JCBpcyBjYWxsZWQgdGhlIHN1cHBvcnQgb2YgWCByZXNwLiBmLg0KDQpUaGUgZGVuc2l0eSBpcyB0aGUgZGVyaXZhdGlvbiBvZiB0aGUgW2Rpc3RyaWJ1dGlvbiBmdW5jdGlvbl0oLi9kaXN0cmlidXRpb25GdW5jdGlvbi5uYi5odG1sKS4gU28gaWYgeW91IHdhbnQgdG8gY2FsY3VsYXRlIG91dCBvZiB0aGUgZGVuc2l0eSB5b3UgaGF2ZSB0byBidWlsZCB0aGUgaW5kZWZpbml0ZSBpbnRlZ3JhbCBvZiBmKHgpDQoNClRvIGJlIGEgZGVuc2l0eSBmdW5jdGlvbiwgZih4KSBoYXMgdG8gZnVsZmlsbCB0aGUgZm9sbG93aW5nIHRlcm06ICRcaW50X3thfV57Yn0gZih4KSBcOyBkeCA9IDEkDQoNCi0tLQ0KDQojIyMjIEZvciBbY29udGludW91cyB1bmlmb3JtIGRpc3RyaWJ1dGlvbl0oLi91bmlmb3JtRGlzdHJpYnV0aW9uKToNCg0KJCRmKHgpID0gXGJlZ2lue2Nhc2VzfQ0KXGZyYWN7MX17YiAtIGF9DQosJiBhIFxsZSB4IFxsZSBiXFwNCjAgICwmIG90aGVyd2lzZQ0KXGVuZHtjYXNlc30gJCQNCg0KIyMjIyBGb3IgW3RoZSBleHBvbmVudGlhbCBkaXN0cmlidXRpb25dKC4vZXhwb25lbnRpYWxEaXN0cmlidXRpb24ubmIuaHRtbCkNCg0KJCRmKHgpID0gXGJlZ2lue2Nhc2VzfQ0KXGxhbWJkYSBlXnstXGxhbWJkYSB4fSAsJiB4IFxnZSAwXFwNCjAgICwmIHggPCAwDQpcZW5ke2Nhc2VzfSAkJA0KDQojIyMjIEZvciBbdGhlIG5vcm1hbCBkaXN0cmlidXRpb25dKC4vbm9ybWFsRGlzdHJpYnV0aW9uLm5iLmh0bWwpDQokJGYoeCkgPSBcZnJhY3sxfXtcc3FydCgyIFxwaSBvKX0gZXhwKC0gXGZyYWN7KHggLSBcbXUpXjJ9ezJvXjJ9KSQkDQoNCnNwZWNpZmljYWxseSBmb3IgJFxtdSA9IDAkIGFuZCAkb14yID0gMSQsIHRoZSBkZW5zaXR5ICRccGhpJCBpczogJFxmcmFjezF9e1xzcXJ0KDJccGkpfSBleHAoLTAuNXheMikkDQoNCltCYWNrIHRvIFRhYmxlIG9mIENvbnRlbnRzXSguLi8p</div>
 
 
 

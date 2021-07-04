@@ -10,6 +10,10 @@ $$P(a \le X \le b) = \int_{a}^{b} f(x) \; dx$$
 The function f is called the (probability) density of X. The set
 $T = {x \in R: f(x) > 0}$ is called the support of X resp. f.
 
+The density is the derivation of the [distribution function](./distributionFunction.nb.html). So if you want to calculate out of the density you have to build the indefinite integral of f(x)
+
+To be a density function, f(x) has to fulfill the following term: $\int_{a}^{b} f(x) \; dx = 1$
+
 ---
 
 #### For [continuous uniform distribution](./uniformDistribution):
@@ -27,8 +31,8 @@ $$f(x) = \begin{cases}
 0  ,& x < 0
 \end{cases} $$
 
-### For [the normal distribution](./normalDistribution.nb.html)
-$f(x) = \frac{1}{\sqrt(2 \pi o)} exp(- \frac{(x - \mu)^2}{2o^2})$
+#### For [the normal distribution](./normalDistribution.nb.html)
+$$f(x) = \frac{1}{\sqrt(2 \pi o)} exp(- \frac{(x - \mu)^2}{2o^2})$$
 
 specifically for $\mu = 0$ and $o^2 = 1$, the density $\phi$ is: $\frac{1}{\sqrt(2\pi)} exp(-0.5x^2)$
 

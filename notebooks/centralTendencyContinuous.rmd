@@ -10,7 +10,7 @@ If the distribution function 𝐹𝐹 is strictly monotonically increasing, p-qu
 
 The ***expected value*** of a continuous random variable X with density f is given by $\mu = E(X) = \int_{-\infty}^{\infty} x* f(x) \; dx$
 
-The ***variance*** of a continuous random variable X with density f is given by $o^2 = Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 f(x) \; dx$
+The ***variance*** of a continuous random variable X with density f is given by $o^2 = Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 f(x) \; dx = E(X^2) - E(X)^2$
 
 The ***standard deviation*** of a continuous random variable X is than given by $+\sqrt(Var(X))$
 
