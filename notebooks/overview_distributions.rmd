@@ -1,0 +1,61 @@
+---
+title: "Overview: Distributions"
+output: html_notebook
+---
+
+#### Bernoulli distribution
+The random variable X takes only the values 0 or 1 (has a support T = {0, 1})
+
+Examples: coin toss
+
+---
+
+#### Discrete uniform distribution
+All possible values have the same probability
+
+Examples: thrown number when throwing a dice once
+
+---
+
+#### [Continuous uniform distribution](./uniformDistribution.nb.html)
+
+---
+
+#### [Binomial distribution](./binominal_Distri.nb.html) ($B(n, \pi)$)
+For n independent repetitions of a Bernoulli experiment
+
+Example: n independent draws of lottery with two possible outcomes prize or blank
+
+---
+
+#### [Poisson distribution](./poissonDistri.nb.html) ($Po(\lambda)$)
+Count the number of (random) incidents / events within a fixed time interval, if they can occur at any time
+
+Examples: Property insurance claims within one year; Number of cases of a rare disease in one month
+
+---
+
+#### [Exponential distribution](./exponentialDistribution.nb.html)
+Results from the modeling of durations where time is measured - at least approximately - continuously
+
+Examples: : Lifetime of a product or technical system
+
+---
+
+#### [Normal distribution/ Gaussian distribution](./normalDistribution.nb.html)
+The distribution function of the (standardized) sum of n independent, identically distributed random variables
+
+Examples: Deviations from target values in the production of equipment, physical sizes (height, weight)
+
+---
+
+#### $\chi ^2$ distribution ($\chi ^2(n)$
+Distribution of the sum of independent squared standard normally distributed random variables
+
+---
+
+#### t distribution (t(n))
+Required especially for parameter tests and confidence intervals for parameters in statistical inference
+
+
+[Back to Table of Contents](../)
