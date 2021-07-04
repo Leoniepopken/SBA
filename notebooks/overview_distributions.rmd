@@ -42,7 +42,7 @@ Examples: : Lifetime of a product or technical system
 
 ---
 
-#### [Normal distribution/ Gaussian distribution](./normalDistribution.nb.html)
+#### [Normal distribution/ Gaussian distribution](./normalDistribution.nb.html)$N(\mu, o^2)$
 The distribution function of the (standardized) sum of n independent, identically distributed random variables
 
 Examples: Deviations from target values in the production of equipment, physical sizes (height, weight)

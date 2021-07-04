@@ -19,6 +19,8 @@ $$o = +\sqrt{Var(X)}$$
 
 [Estimators](./point_estimation.nb.html): $\tilde{S^2} = g(X_1,  \dots, X_n) = \frac{1}{n}\sum_{i = 1}^{n}(X_i - \overline{X})^2$ and $S^2 = g(X_1,  \dots, X_n) = \frac{1}{n - 1}\sum_{i = 1}^{n}(X_i - \overline{X})^2$
 
+[Confidence interval](./interval_estimation.nb.html): $[\overline{X}-t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}, \overline{X}+t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}]$
+
 #### Frequency interpretation of the variance
 - Var(X) can be interpreted as the average squared deviation from the arithmetic mean that results when we repeat the random process often enough
 

@@ -1,0 +1,12 @@
+---
+title: "Z-test for the expected value"
+output: html_notebook
+---
+
+We consider the following test problems in which a hypothetical expected value $\mu_0$ is compared to the true expected value $\mu$:
+
+(1) $H_0: \mu = \mu_0$ versus $H_1: \mu != \mu_0$ (two-tailed test problem)
+(2) $H_0: \mu = \mu_0$ versus $H_1: \mu < \mu_0$ (left-tailed test problem)
+(3) $H_0: \mu = \mu_0$ versus $H_1: \mu > \mu_0$ (right-tailed test problem)
+
+[Back to Table of Contents](../)

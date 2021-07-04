@@ -52,7 +52,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   13. [Density](./notebooks/density.nb.html)
   16. [Central tendency and dispersion measures for continuous random variables](./notebooks/centralTendencyContinuous.nb.html)
 
-      <br>[Overview: distributions](./notebooks/overview_distributions.nb.html)
+<br>[Overview: distributions](./notebooks/overview_distributions.nb.html)
 
 ---
 
@@ -62,6 +62,8 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   3. [Mean squared error and consistency](./notebooks/mean_squared_error_and_consistency.nb.html)
   4. [Construction of estimation functions](./notebooks/construction_of_estimation_functions.nb.html)
   5. [Interval estimation](./notebooks/interval_estimation.nb.html)
+
+<br>[Overiew: statistical tests](./overview_tests.nb.html)
 
 ---
 

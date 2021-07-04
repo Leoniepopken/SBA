@@ -10,4 +10,15 @@ $$P(G_u \ge G_o) = 1$$
 $$P(G_u \ge \theta \ge G_o) = 1 - \alpha$$
 &1 - \alpha& is also called confidence level
 
+---
+
+#### For the [expected value](./central_tendency.nb.html)
+$1-\alpha$-confidence of a [$N(\mu, o^2)$-distribution](./normalDistribution.nb.html) for known $o^2$: $[\overline{X}-Z_{1-\alpha/2} * \frac{o}{\sqrt{n}}, \overline{X}+Z_{1-\alpha/2} * \frac{o}{\sqrt{n}}]$
+
+---
+
+#### For unknown [variance $o^2$](./prop_distribution_measures.nb.html)
+$[\overline{X}-t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}, \overline{X}+t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}]$ <br>
+$S = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2}$ <br>
+
 [Back to Table of Contents](../)

@@ -1,0 +1,16 @@
+---
+title: "Overview: statistical tests"
+output: html_notebook
+---
+
+A statistical test problem consists of a null hypothesis $H_0$ and an alternative hypothesis $H_1$ that are mutually exclusive and involve statements about the entire distribution or about specific parameters of a characteristic of interest in the population.
+A test statistic for a statistical test problem is a function $T = g(X_1, \dots, X_n)$ of sample variables $X_1, \dots, X_n$ with the following properties:
+- Sensitivity for the test problem: Based on the value $t = g(x_1, \dots, x_n)$ resulting from the realizations $x_1, \dots, x_n$ it can be judged whether $H_0$ or $H_1$ is more likely to be true for the population
+- Known distribution under the null hypothesis: The distribution of T under the assumption that the null hypothesis is true (test distribution) can be determined
+
+---
+
+#### [Z-test for the expected value](./z-test.nb.html)
+
+#### [T-test for the expected value](./t-test.nb.html)
+[Back to Table of Contents](../)
