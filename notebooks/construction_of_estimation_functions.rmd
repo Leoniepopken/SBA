@@ -1,0 +1,22 @@
+---
+title: "Construction of estimation functions"
+output: html_notebook
+---
+
+#### Maximum Likelihood method
+- we estimate  an unknown parameter $\theta$
+- the value of the likelihood function L for given realizations $x_1, \dots, x_n$ of the sample variables is determined by
+
+$$L(\theta) = f(x_1, \dots, x_n|\theta) = f(x_1|\theta)\dots f(x_n|\theta)$$
+
+Here $f(x_1|\theta)$ denotes the value of the probability density f at $x_i$ under the assumption that the underlying true parameter value is $\theta$
+
+---
+
+#### Log-Likelihood method
+- we estimate  an unknown parameter $\theta$
+- the value of the log-likelihood function L for given realizations $x_1, \dots, x_n$ of the sample variables is determined by
+
+$$ln L(\theta) = ln(f(x_1, \dots, x_n|\theta)) = \sum_{i = 1}^{n} ln f(x_i|\theta)$$
+
+[Back to Table of Contents](../)

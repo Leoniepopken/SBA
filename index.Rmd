@@ -60,11 +60,11 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   1. [Point estimation](./notebooks/point_estimation.nb.html)
   2. [Unbiased estimators](./notebooks/unbiased_estimator.nb.html)
   3. [Mean squared error and consistency](./notebooks/mean_squared_error_and_consistency.nb.html)
-  4. [Construction of estimation functions]
+  4. [Construction of estimation functions](./notebooks/construction_of_estimation_functions.nb.html)
   5. [Interval estimation]
 
 ---
 
-#### Other (Useful Documents)
+##### Other (Useful Documents)
 1. [R Cheat Sheet](./pdfs/r-befehle.pdf) (german only)
 
