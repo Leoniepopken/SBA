@@ -236,7 +236,8 @@ pre code {
 </div>
 <div id="for-a-continuos-variable-with-density-f" class="section level4">
 <h4>For a continuos variable with density f</h4>
-<p><span class="math display">\[F(x) = P(X \le x) = \int_{-\infty}^{x} f(x) \; dx\]</span> <a href="../">Back to Table of Contents</a></p>
+<p><span class="math display">\[F(x) = P(X \le x) = \int_{-\infty}^{x} f(x) \; dx\]</span></p>
+<hr />
 </div>
 <div id="for-continous-uniform-distribution" class="section level4">
 <h4>For <a href="./uniformDistribution.nb.html">continous uniform distribution</a></h4>
@@ -245,6 +246,7 @@ pre code {
 \frac{x - a}{b - a} ,&amp; a \le x \le b \\
 1 ,&amp; x &gt; b
 \end{cases} \]</span></p>
+<hr />
 </div>
 <div id="for-the-exponential-distribution" class="section level4">
 <h4>For the exponential distribution</h4>
@@ -252,11 +254,16 @@ pre code {
 \lambda e^{-\lambda x} ,&amp; x \ge 0\\
 0  ,&amp; x &lt; 0
 \end{cases} \]</span></p>
+<hr />
+</div>
+<div id="some-calculation-hints" class="section level4">
+<h4>some calculation hints</h4>
+<p>Probabilities can be calculated via the distribution function as follows: <br> - <span class="math inline">\(P(X &gt; x) = 1 - P(X \le x) = 1 - F(x)\)</span> <br> - <span class="math inline">\(P(x &lt; X &lt; y) = P(X \le y) - P(X \le x) = F(y) - F(x)\)</span> <br> - <span class="math inline">\(P(x \le X \le y | X \le z) = \frac{P(x \le X \le y, X \le z)}{P(X \le z)} = \frac {P(x \le X \le z)}{P(X \le z)} = \frac{F(z) - F(x)}{F(z)}\)</span> <br> - <span class="math inline">\(P(X \le x) = F(x)\)</span> <br> - <span class="math inline">\(P(X \ge x) = 1 - F(x)\)</span> <br></p>
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkRpc3RyaWJ1dGlvbiBGdW5jdGlvbiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCi0gSWYgdGhlIGRpc2NyZXRlIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGF0IGxlYXN0IG9yZGluYWxseSBzY2FsZWQsIHdlIGNhbiBkZWZpbmUgdGhlIGRpc3RyaWJ1dGlvbiBmdW5jdGlvbiBvZiBYIHNpbWlsYXJseSB0byB0aGUgZW1waXJpY2FsIGRpc3RyaWJ1dGlvbiBmdW5jdGlvbiBvZiBhIGZlYXR1cmUvY2hhcmFjdGVyaXN0aWMNCi0gRm9yIHRoaXMsIHdlIGFzc3VtZSB0aGF0IHRoZSB2YWx1ZXMgJHhfMSwgeF8yLCAuLi4gLCB4X2ssIC4uLiQgaW4gdGhlIHN1cHBvcnQgb2YgWCBhcmUgYWxyZWFkeSBzb3J0ZWQgaW4gYXNjZW5kaW5nDQpvcmRlciAoaS5lLiAkeF8xIDwgeF8yIDwgLi4uIDwgeF9rIDwgLi4uJCkNCg0KJCRGKHgpID0gUChYIFxsZSB4KSA9IFxzdW1cbGltaXRzX3tpOnhfaSBcbGUgeH0gZih4X2kpID0gXHN1bVxsaW1pdHNfe2k6eF9pIFxsZSB4fSBwX2kkJA0KDQphbmQgJFAoWCBcZ2UgeCkgPSAxIC0gUChYIFxsZSB4KSA9IDEgLSBGKHgpJA0KDQotIEYoeCkgY29ycmVzcG9uZHMgZXhhY3RseSB0byB0aGUgcHJvYmFiaWxpdHkgdGhhdCB0aGUgdmFsdWUgb2YgdGhlIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGF0IG1vc3QgeC4NCg0KIyMjIyBQcm9wZXJ0aWVzDQotIFRoZSBmdW5jdGlvbiBGIGlzIGEgbW9ub3RvbmljYWxseSBpbmNyZWFzaW5nIHN0ZXAgZnVuY3Rpb24NCi0gSnVtcCBvZiBoZWlnaHQgJHBfaSA9IGYoeF9pKSQgYXQgJHhfaSQNCi0gQXQganVtcCBwb2ludHMsIHRoZSB1cHBlciB2YWx1ZSAoInN0YWlyIGVkZ2UiKSBpcyB0aGUgY29ycmVzcG9uZGluZyBmdW5jdGlvbiB2YWx1ZQ0KLSBGKHgpID0gMCBmb3IgYWxsICR4IDwgeF8xJA0KDQotLS0NCg0KIyMjIyBGb3IgYSBjb250aW51b3MgdmFyaWFibGUgd2l0aCBkZW5zaXR5IGYNCiQkRih4KSA9IFAoWCBcbGUgeCkgPSBcaW50X3stXGluZnR5fV57eH0gZih4KSBcOyBkeCQkDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ0KDQojIyMjIEZvciBbY29udGlub3VzIHVuaWZvcm0gZGlzdHJpYnV0aW9uXSguL3VuaWZvcm1EaXN0cmlidXRpb24ubmIuaHRtbCkNCg0KJCRGKHgpID0gXGludF97LSBcaW5mdHl9Xnt4fSBmKHQpIFw7IGR0ID0gXGJlZ2lue2Nhc2VzfQ0KMCAsJiB4IDwgYVxcDQpcZnJhY3t4IC0gYX17YiAtIGF9ICwmIGEgXGxlIHggXGxlIGIgXFwNCjEgLCYgeCA+IGINClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgRm9yIHRoZSBleHBvbmVudGlhbCBkaXN0cmlidXRpb24NCiQkRih4KSA9IFxpbnRfey0gXGluZnR5fV57eH0gZih0KSBcOyBkdCA9IFxiZWdpbntjYXNlc30NClxsYW1iZGEgZV57LVxsYW1iZGEgeH0gLCYgeCBcZ2UgMFxcDQowICAsJiB4IDwgMA0KXGVuZHtjYXNlc30gJCQNCg0KDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkRpc3RyaWJ1dGlvbiBGdW5jdGlvbiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCi0gSWYgdGhlIGRpc2NyZXRlIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGF0IGxlYXN0IG9yZGluYWxseSBzY2FsZWQsIHdlIGNhbiBkZWZpbmUgdGhlIGRpc3RyaWJ1dGlvbiBmdW5jdGlvbiBvZiBYIHNpbWlsYXJseSB0byB0aGUgZW1waXJpY2FsIGRpc3RyaWJ1dGlvbiBmdW5jdGlvbiBvZiBhIGZlYXR1cmUvY2hhcmFjdGVyaXN0aWMNCi0gRm9yIHRoaXMsIHdlIGFzc3VtZSB0aGF0IHRoZSB2YWx1ZXMgJHhfMSwgeF8yLCAuLi4gLCB4X2ssIC4uLiQgaW4gdGhlIHN1cHBvcnQgb2YgWCBhcmUgYWxyZWFkeSBzb3J0ZWQgaW4gYXNjZW5kaW5nDQpvcmRlciAoaS5lLiAkeF8xIDwgeF8yIDwgLi4uIDwgeF9rIDwgLi4uJCkNCg0KJCRGKHgpID0gUChYIFxsZSB4KSA9IFxzdW1cbGltaXRzX3tpOnhfaSBcbGUgeH0gZih4X2kpID0gXHN1bVxsaW1pdHNfe2k6eF9pIFxsZSB4fSBwX2kkJA0KDQphbmQgJFAoWCBcZ2UgeCkgPSAxIC0gUChYIFxsZSB4KSA9IDEgLSBGKHgpJA0KDQotIEYoeCkgY29ycmVzcG9uZHMgZXhhY3RseSB0byB0aGUgcHJvYmFiaWxpdHkgdGhhdCB0aGUgdmFsdWUgb2YgdGhlIHJhbmRvbSB2YXJpYWJsZSBYIGlzIGF0IG1vc3QgeC4NCg0KIyMjIyBQcm9wZXJ0aWVzDQotIFRoZSBmdW5jdGlvbiBGIGlzIGEgbW9ub3RvbmljYWxseSBpbmNyZWFzaW5nIHN0ZXAgZnVuY3Rpb24NCi0gSnVtcCBvZiBoZWlnaHQgJHBfaSA9IGYoeF9pKSQgYXQgJHhfaSQNCi0gQXQganVtcCBwb2ludHMsIHRoZSB1cHBlciB2YWx1ZSAoInN0YWlyIGVkZ2UiKSBpcyB0aGUgY29ycmVzcG9uZGluZyBmdW5jdGlvbiB2YWx1ZQ0KLSBGKHgpID0gMCBmb3IgYWxsICR4IDwgeF8xJA0KDQotLS0NCg0KIyMjIyBGb3IgYSBjb250aW51b3MgdmFyaWFibGUgd2l0aCBkZW5zaXR5IGYNCiQkRih4KSA9IFAoWCBcbGUgeCkgPSBcaW50X3stXGluZnR5fV57eH0gZih4KSBcOyBkeCQkDQoNCi0tLQ0KDQojIyMjIEZvciBbY29udGlub3VzIHVuaWZvcm0gZGlzdHJpYnV0aW9uXSguL3VuaWZvcm1EaXN0cmlidXRpb24ubmIuaHRtbCkNCg0KJCRGKHgpID0gXGludF97LSBcaW5mdHl9Xnt4fSBmKHQpIFw7IGR0ID0gXGJlZ2lue2Nhc2VzfQ0KMCAsJiB4IDwgYVxcDQpcZnJhY3t4IC0gYX17YiAtIGF9ICwmIGEgXGxlIHggXGxlIGIgXFwNCjEgLCYgeCA+IGINClxlbmR7Y2FzZXN9ICQkDQoNCi0tLQ0KDQojIyMjIEZvciB0aGUgZXhwb25lbnRpYWwgZGlzdHJpYnV0aW9uDQokJEYoeCkgPSBcaW50X3stIFxpbmZ0eX1ee3h9IGYodCkgXDsgZHQgPSBcYmVnaW57Y2FzZXN9DQpcbGFtYmRhIGVeey1cbGFtYmRhIHh9ICwmIHggXGdlIDBcXA0KMCAgLCYgeCA8IDANClxlbmR7Y2FzZXN9ICQkDQoNCi0tLQ0KDQojIyMjIHNvbWUgY2FsY3VsYXRpb24gaGludHMNClByb2JhYmlsaXRpZXMgY2FuIGJlIGNhbGN1bGF0ZWQgdmlhIHRoZSBkaXN0cmlidXRpb24gZnVuY3Rpb24gYXMgZm9sbG93czogPGJyPg0KICAgIC0gJFAoWCA+IHgpID0gMSAtIFAoWCBcbGUgeCkgPSAxIC0gRih4KSQgPGJyPg0KICAgIC0gJFAoeCA8IFggPCB5KSA9IFAoWCBcbGUgeSkgLSBQKFggXGxlIHgpID0gRih5KSAtIEYoeCkkIDxicj4NCiAgICAtICRQKHggXGxlIFggXGxlIHkgfCBYIFxsZSB6KSA9IFxmcmFje1AoeCBcbGUgWCBcbGUgeSwgWCBcbGUgeil9e1AoWCBcbGUgeil9ID0gXGZyYWMge1AoeCBcbGUgWCBcbGUgeil9e1AoWCBcbGUgeil9ID0gXGZyYWN7Rih6KSAtIEYoeCl9e0Yoeil9JCA8YnI+DQogICAgLSAkUChYIFxsZSB4KSA9IEYoeCkkIDxicj4NCiAgICAtICRQKFggXGdlIHgpID0gMSAtIEYoeCkkIDxicj4NCg0KDQpbQmFjayB0byBUYWJsZSBvZiBDb250ZW50c10oLi4vKQ==</div>
 
 
 

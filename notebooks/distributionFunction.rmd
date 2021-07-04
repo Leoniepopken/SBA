@@ -23,7 +23,8 @@ and $P(X \ge x) = 1 - P(X \le x) = 1 - F(x)$
 
 #### For a continuos variable with density f
 $$F(x) = P(X \le x) = \int_{-\infty}^{x} f(x) \; dx$$
-[Back to Table of Contents](../)
+
+---
 
 #### For [continous uniform distribution](./uniformDistribution.nb.html)
 
@@ -33,11 +34,23 @@ $$F(x) = \int_{- \infty}^{x} f(t) \; dt = \begin{cases}
 1 ,& x > b
 \end{cases} $$
 
+---
+
 #### For the exponential distribution
 $$F(x) = \int_{- \infty}^{x} f(t) \; dt = \begin{cases}
 \lambda e^{-\lambda x} ,& x \ge 0\\
 0  ,& x < 0
 \end{cases} $$
+
+---
+
+#### some calculation hints
+Probabilities can be calculated via the distribution function as follows: <br>
+    - $P(X > x) = 1 - P(X \le x) = 1 - F(x)$ <br>
+    - $P(x < X < y) = P(X \le y) - P(X \le x) = F(y) - F(x)$ <br>
+    - $P(x \le X \le y | X \le z) = \frac{P(x \le X \le y, X \le z)}{P(X \le z)} = \frac {P(x \le X \le z)}{P(X \le z)} = \frac{F(z) - F(x)}{F(z)}$ <br>
+    - $P(X \le x) = F(x)$ <br>
+    - $P(X \ge x) = 1 - F(x)$ <br>
 
 
 [Back to Table of Contents](../)

@@ -21,6 +21,8 @@ $$f(x) = \begin{cases}
 0  ,& otherwise
 \end{cases} $$
 
+and $P(X = 0) = f(0) = e^-\lambda$ so $\lambda = -log(f(0))$
+
 The Po($\lambda$)-distribution ist obtained by counting the number of (rare) incidents or events within a fixed time interval, where the probability that an incident occurs during a small time interval of lenth $\Delta t$ is approximately $\lambda * \Delta t$
 
 #### Properties
