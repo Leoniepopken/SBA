@@ -1,0 +1,13 @@
+---
+title: "Interval estimation"
+output: html_notebook
+---
+
+Idea: Determine an interval depending on the values of the sample variables $X_1, \dots, X_n$ that contains the true value of the parameter $\theta$ to be estimated with high probability
+
+For given error probability $\alpha \in [0,1]$, the functions $G_u = g_u(X_1, \dots, X_n)$ and $G_o = g_o(X_1, \dots, X_n) of the sample variables give a &(1 - \alpha)& - confidence interval if:
+$$P(G_u \ge G_o) = 1$$
+$$P(G_u \ge \theta \ge G_o) = 1 - \alpha$$
+&1 - \alpha& is also called confidence level
+
+[Back to Table of Contents](../)
