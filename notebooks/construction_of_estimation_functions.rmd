@@ -7,9 +7,18 @@ output: html_notebook
 - we estimate  an unknown parameter $\theta$
 - the value of the likelihood function L for given realizations $x_1, \dots, x_n$ of the sample variables is determined by
 
-$$L(\theta) = f(x_1, \dots, x_n|\theta) = f(x_1|\theta)\dots f(x_n|\theta)$$
+$$L(\theta) = f(x_1, \dots, x_n|\theta) = f(x_1|\theta)\dots f(x_n|\theta) = \prod_{i = 1}^{n} f(x_i|\theta)$$
 
-Here $f(x_1|\theta)$ denotes the value of the probability density f at $x_i$ under the assumption that the underlying true parameter value is $\theta$
+Here $f(x_1|\theta)$ denotes the value of the probability density f at $x_i$ under the assumption that the underlying true parameter value is $\theta$.
+
+To find the ML-estimator we need to derive the likelihood function after $\theta$ and set to null.
+<br>
+<br>
+
+##### Example: ML-estimator for a [exponential distribution](./exponentialDistribution.nb.html) where $\lambda$ is searched
+$f(x|\lambda) = \prod_{i = 1}^{n} \lambda e ^{-\lambda x_i} = \lambda^n e^{-\lambda \sum x_i}$<br>
+$n - \lambda \sum_{i=1}^{n}x_i= 0$ <br>
+$\lambda = \frac{1}{\overline{x}}$
 
 ---
 

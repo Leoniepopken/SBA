@@ -5,20 +5,33 @@ output: html_notebook
 
 Idea: Determine an interval depending on the values of the sample variables $X_1, \dots, X_n$ that contains the true value of the parameter $\theta$ to be estimated with high probability
 
-For given error probability $\alpha \in [0,1]$, the functions $G_u = g_u(X_1, \dots, X_n)$ and $G_o = g_o(X_1, \dots, X_n) of the sample variables give a &(1 - \alpha)& - confidence interval if:
+For given error probability $\alpha \in [0,1]$, the functions $G_u = g_u(X_1, \dots, X_n)$ and $G_o = g_o(X_1, \dots, X_n)$ of the sample variables give a $(1 - \alpha)$ - confidence interval if:
 $$P(G_u \ge G_o) = 1$$
 $$P(G_u \ge \theta \ge G_o) = 1 - \alpha$$
-&1 - \alpha& is also called confidence level
+$1 - \alpha$ is also called confidence level
 
 ---
 
-#### For the [expected value](./central_tendency.nb.html)
-$1-\alpha$-confidence of a [$N(\mu, o^2)$-distribution](./normalDistribution.nb.html) for known $o^2$: $[\overline{X}-Z_{1-\alpha/2} * \frac{o}{\sqrt{n}}, \overline{X}+Z_{1-\alpha/2} * \frac{o}{\sqrt{n}}]$
+#### Confidence interval or the [expected value](./central_tendency.nb.html)
 
----
+##### - Case 1: $o^2$ known; [normally distributed](./normalDistribution.nb.html)
 
-#### For unknown [variance $o^2$](./prop_distribution_measures.nb.html)
-$[\overline{X}-t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}, \overline{X}+t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}]$ <br>
-$S = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2}$ <br>
+$[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}]$
 
-[Back to Table of Contents](../)
+##### - Case 2: $o^2$ unknown; [normally distributed](./normalDistribution.nb.html)
+
+$[\overline{X} - t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}, \overline{X} + t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}]$ with $S = \sqrt{\frac{1}{n-1}\sum_{i}(X_i-\overline{X})^2}$
+
+##### - Case 3: $o^2$ known; any distribution
+
+$[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}]$
+
+##### - Case 4: $o^2$ unknown; any distribution
+
+$[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}]$
+
+***Note that the values for $z_p$ and $t_p$ are given in a table (see book page 547 ff.)***
+
+#### For the [variance $o^2$](./prop_distribution_measures.nb.html); [normally distributed](./normalDistribution.nb.html)
+
+$[\frac{(n-1)S^2}{q_{1-\frac{1-\alpha}{2}}}, \frac{(n-1)S^2}{q_{\frac{\alpha}{2}}}]$

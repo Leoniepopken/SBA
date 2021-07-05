@@ -221,9 +221,14 @@ pre code {
 <li>we estimate an unknown parameter <span class="math inline">\(\theta\)</span></li>
 <li>the value of the likelihood function L for given realizations <span class="math inline">\(x_1, \dots, x_n\)</span> of the sample variables is determined by</li>
 </ul>
-<p><span class="math display">\[L(\theta) = f(x_1, \dots, x_n|\theta) = f(x_1|\theta)\dots f(x_n|\theta)\]</span></p>
-<p>Here <span class="math inline">\(f(x_1|\theta)\)</span> denotes the value of the probability density f at <span class="math inline">\(x_i\)</span> under the assumption that the underlying true parameter value is <span class="math inline">\(\theta\)</span></p>
+<p><span class="math display">\[L(\theta) = f(x_1, \dots, x_n|\theta) = f(x_1|\theta)\dots f(x_n|\theta) = \prod_{i = 1}^{n} f(x_i|\theta)\]</span></p>
+<p>Here <span class="math inline">\(f(x_1|\theta)\)</span> denotes the value of the probability density f at <span class="math inline">\(x_i\)</span> under the assumption that the underlying true parameter value is <span class="math inline">\(\theta\)</span>.</p>
+<p>To find the ML-estimator we need to derive the likelihood function after <span class="math inline">\(\theta\)</span> and set to null. <br> <br></p>
+<div id="example-ml-estimator-for-a-exponential-distribution-where-lambda-is-searched" class="section level5">
+<h5>Example: ML-estimator for a <a href="./exponentialDistribution.nb.html">exponential distribution</a> where <span class="math inline">\(\lambda\)</span> is searched</h5>
+<p><span class="math inline">\(f(x|\lambda) = \prod_{i = 1}^{n} \lambda e ^{-\lambda x_i} = \lambda^n e^{-\lambda \sum x_i}\)</span><br> <span class="math inline">\(n - \lambda \sum_{i=1}^{n}x_i= 0\)</span> <br> <span class="math inline">\(\lambda = \frac{1}{\overline{x}}\)</span></p>
 <hr />
+</div>
 </div>
 <div id="log-likelihood-method" class="section level4">
 <h4>Log-Likelihood method</h4>
@@ -236,7 +241,7 @@ pre code {
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkNvbnN0cnVjdGlvbiBvZiBlc3RpbWF0aW9uIGZ1bmN0aW9ucyINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCiMjIyMgTWF4aW11bSBMaWtlbGlob29kIG1ldGhvZA0KLSB3ZSBlc3RpbWF0ZSAgYW4gdW5rbm93biBwYXJhbWV0ZXIgJFx0aGV0YSQNCi0gdGhlIHZhbHVlIG9mIHRoZSBsaWtlbGlob29kIGZ1bmN0aW9uIEwgZm9yIGdpdmVuIHJlYWxpemF0aW9ucyAkeF8xLCBcZG90cywgeF9uJCBvZiB0aGUgc2FtcGxlIHZhcmlhYmxlcyBpcyBkZXRlcm1pbmVkIGJ5DQoNCiQkTChcdGhldGEpID0gZih4XzEsIFxkb3RzLCB4X258XHRoZXRhKSA9IGYoeF8xfFx0aGV0YSlcZG90cyBmKHhfbnxcdGhldGEpJCQNCg0KSGVyZSAkZih4XzF8XHRoZXRhKSQgZGVub3RlcyB0aGUgdmFsdWUgb2YgdGhlIHByb2JhYmlsaXR5IGRlbnNpdHkgZiBhdCAkeF9pJCB1bmRlciB0aGUgYXNzdW1wdGlvbiB0aGF0IHRoZSB1bmRlcmx5aW5nIHRydWUgcGFyYW1ldGVyIHZhbHVlIGlzICRcdGhldGEkDQoNCi0tLQ0KDQojIyMjIExvZy1MaWtlbGlob29kIG1ldGhvZA0KLSB3ZSBlc3RpbWF0ZSAgYW4gdW5rbm93biBwYXJhbWV0ZXIgJFx0aGV0YSQNCi0gdGhlIHZhbHVlIG9mIHRoZSBsb2ctbGlrZWxpaG9vZCBmdW5jdGlvbiBMIGZvciBnaXZlbiByZWFsaXphdGlvbnMgJHhfMSwgXGRvdHMsIHhfbiQgb2YgdGhlIHNhbXBsZSB2YXJpYWJsZXMgaXMgZGV0ZXJtaW5lZCBieQ0KDQokJGxuIEwoXHRoZXRhKSA9IGxuKGYoeF8xLCBcZG90cywgeF9ufFx0aGV0YSkpID0gXHN1bV97aSA9IDF9XntufSBsbiBmKHhfaXxcdGhldGEpJCQNCg0KW0JhY2sgdG8gVGFibGUgb2YgQ29udGVudHNdKC4uLykNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkNvbnN0cnVjdGlvbiBvZiBlc3RpbWF0aW9uIGZ1bmN0aW9ucyINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCiMjIyMgTWF4aW11bSBMaWtlbGlob29kIG1ldGhvZA0KLSB3ZSBlc3RpbWF0ZSAgYW4gdW5rbm93biBwYXJhbWV0ZXIgJFx0aGV0YSQNCi0gdGhlIHZhbHVlIG9mIHRoZSBsaWtlbGlob29kIGZ1bmN0aW9uIEwgZm9yIGdpdmVuIHJlYWxpemF0aW9ucyAkeF8xLCBcZG90cywgeF9uJCBvZiB0aGUgc2FtcGxlIHZhcmlhYmxlcyBpcyBkZXRlcm1pbmVkIGJ5DQoNCiQkTChcdGhldGEpID0gZih4XzEsIFxkb3RzLCB4X258XHRoZXRhKSA9IGYoeF8xfFx0aGV0YSlcZG90cyBmKHhfbnxcdGhldGEpID0gXHByb2Rfe2kgPSAxfV57bn0gZih4X2l8XHRoZXRhKSQkDQoNCkhlcmUgJGYoeF8xfFx0aGV0YSkkIGRlbm90ZXMgdGhlIHZhbHVlIG9mIHRoZSBwcm9iYWJpbGl0eSBkZW5zaXR5IGYgYXQgJHhfaSQgdW5kZXIgdGhlIGFzc3VtcHRpb24gdGhhdCB0aGUgdW5kZXJseWluZyB0cnVlIHBhcmFtZXRlciB2YWx1ZSBpcyAkXHRoZXRhJC4NCg0KVG8gZmluZCB0aGUgTUwtZXN0aW1hdG9yIHdlIG5lZWQgdG8gZGVyaXZlIHRoZSBsaWtlbGlob29kIGZ1bmN0aW9uIGFmdGVyICRcdGhldGEkIGFuZCBzZXQgdG8gbnVsbC4NCjxicj4NCjxicj4NCg0KIyMjIyMgRXhhbXBsZTogTUwtZXN0aW1hdG9yIGZvciBhIFtleHBvbmVudGlhbCBkaXN0cmlidXRpb25dKC4vZXhwb25lbnRpYWxEaXN0cmlidXRpb24ubmIuaHRtbCkgd2hlcmUgJFxsYW1iZGEkIGlzIHNlYXJjaGVkDQokZih4fFxsYW1iZGEpID0gXHByb2Rfe2kgPSAxfV57bn0gXGxhbWJkYSBlIF57LVxsYW1iZGEgeF9pfSA9IFxsYW1iZGFebiBlXnstXGxhbWJkYSBcc3VtIHhfaX0kPGJyPg0KJG4gLSBcbGFtYmRhIFxzdW1fe2k9MX1ee259eF9pPSAwJCA8YnI+DQokXGxhbWJkYSA9IFxmcmFjezF9e1xvdmVybGluZXt4fX0kDQoNCi0tLQ0KDQojIyMjIExvZy1MaWtlbGlob29kIG1ldGhvZA0KLSB3ZSBlc3RpbWF0ZSAgYW4gdW5rbm93biBwYXJhbWV0ZXIgJFx0aGV0YSQNCi0gdGhlIHZhbHVlIG9mIHRoZSBsb2ctbGlrZWxpaG9vZCBmdW5jdGlvbiBMIGZvciBnaXZlbiByZWFsaXphdGlvbnMgJHhfMSwgXGRvdHMsIHhfbiQgb2YgdGhlIHNhbXBsZSB2YXJpYWJsZXMgaXMgZGV0ZXJtaW5lZCBieQ0KDQokJGxuIEwoXHRoZXRhKSA9IGxuKGYoeF8xLCBcZG90cywgeF9ufFx0aGV0YSkpID0gXHN1bV97aSA9IDF9XntufSBsbiBmKHhfaXxcdGhldGEpJCQNCg0KW0JhY2sgdG8gVGFibGUgb2YgQ29udGVudHNdKC4uLykNCg==</div>
 
 
 

@@ -216,21 +216,35 @@ pre code {
 
 <!-- rnb-text-begin -->
 <p>Idea: Determine an interval depending on the values of the sample variables <span class="math inline">\(X_1, \dots, X_n\)</span> that contains the true value of the parameter <span class="math inline">\(\theta\)</span> to be estimated with high probability</p>
-<p>For given error probability <span class="math inline">\(\alpha \in [0,1]\)</span>, the functions <span class="math inline">\(G_u = g_u(X_1, \dots, X_n)\)</span> and $G_o = g_o(X_1, , X_n) of the sample variables give a &amp;(1 - )&amp; - confidence interval if: <span class="math display">\[P(G_u \ge G_o) = 1\]</span> <span class="math display">\[P(G_u \ge \theta \ge G_o) = 1 - \alpha\]</span> &amp;1 - &amp; is also called confidence level</p>
+<p>For given error probability <span class="math inline">\(\alpha \in [0,1]\)</span>, the functions <span class="math inline">\(G_u = g_u(X_1, \dots, X_n)\)</span> and <span class="math inline">\(G_o = g_o(X_1, \dots, X_n)\)</span> of the sample variables give a <span class="math inline">\((1 - \alpha)\)</span> - confidence interval if: <span class="math display">\[P(G_u \ge G_o) = 1\]</span> <span class="math display">\[P(G_u \ge \theta \ge G_o) = 1 - \alpha\]</span> <span class="math inline">\(1 - \alpha\)</span> is also called confidence level</p>
 <hr />
-<div id="for-the-expected-value" class="section level4">
-<h4>For the <a href="./central_tendency.nb.html">expected value</a></h4>
-<p><span class="math inline">\(1-\alpha\)</span>-confidence of a <a href="./normalDistribution.nb.html"><span class="math inline">\(N(\mu, o^2)\)</span>-distribution</a> for known <span class="math inline">\(o^2\)</span>: <span class="math inline">\([\overline{X}-Z_{1-\alpha/2} * \frac{o}{\sqrt{n}}, \overline{X}+Z_{1-\alpha/2} * \frac{o}{\sqrt{n}}]\)</span></p>
-<hr />
+<div id="confidence-interval-or-the-expected-value" class="section level4">
+<h4>Confidence interval or the <a href="./central_tendency.nb.html">expected value</a></h4>
+<div id="case-1-o2-known-normally-distributed" class="section level5">
+<h5>- Case 1: <span class="math inline">\(o^2\)</span> known; <a href="./normalDistribution.nb.html">normally distributed</a></h5>
+<p><span class="math inline">\([\overline{X} - z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}]\)</span></p>
 </div>
-<div id="for-unknown-variance-o2" class="section level4">
-<h4>For unknown <a href="./prop_distribution_measures.nb.html">variance <span class="math inline">\(o^2\)</span></a></h4>
-<p><span class="math inline">\([\overline{X}-t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}, \overline{X}+t_{1-\alpha/2}(n-1) * \frac{S}{\sqrt{n}}]\)</span> <br> <span class="math inline">\(S = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2}\)</span> <br></p>
-<p><a href="../">Back to Table of Contents</a></p>
+<div id="case-2-o2-unknown-normally-distributed" class="section level5">
+<h5>- Case 2: <span class="math inline">\(o^2\)</span> unknown; <a href="./normalDistribution.nb.html">normally distributed</a></h5>
+<p><span class="math inline">\([\overline{X} - t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}, \overline{X} + t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}]\)</span> with <span class="math inline">\(S = \sqrt{\frac{1}{n-1}\sum_{i}(X_i-\overline{X})^2}\)</span></p>
+</div>
+<div id="case-3-o2-known-any-distribution" class="section level5">
+<h5>- Case 3: <span class="math inline">\(o^2\)</span> known; any distribution</h5>
+<p><span class="math inline">\([\overline{X} - z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}]\)</span></p>
+</div>
+<div id="case-4-o2-unknown-any-distribution" class="section level5">
+<h5>- Case 4: <span class="math inline">\(o^2\)</span> unknown; any distribution</h5>
+<p><span class="math inline">\([\overline{X} - z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}]\)</span></p>
+<p><strong><em>Note that the values for <span class="math inline">\(z_p\)</span> and <span class="math inline">\(t_p\)</span> are given in a table (see book page 547 ff.)</em></strong></p>
+</div>
+</div>
+<div id="for-the-variance-o2-normally-distributed" class="section level4">
+<h4>For the <a href="./prop_distribution_measures.nb.html">variance <span class="math inline">\(o^2\)</span></a>; <a href="./normalDistribution.nb.html">normally distributed</a></h4>
+<p><span class="math inline">\([\frac{(n-1)S^2}{q_{1-\frac{1-\alpha}{2}}}, \frac{(n-1)S^2}{q_{\frac{\alpha}{2}}}]\)</span></p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkludGVydmFsIGVzdGltYXRpb24iDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpJZGVhOiBEZXRlcm1pbmUgYW4gaW50ZXJ2YWwgZGVwZW5kaW5nIG9uIHRoZSB2YWx1ZXMgb2YgdGhlIHNhbXBsZSB2YXJpYWJsZXMgJFhfMSwgXGRvdHMsIFhfbiQgdGhhdCBjb250YWlucyB0aGUgdHJ1ZSB2YWx1ZSBvZiB0aGUgcGFyYW1ldGVyICRcdGhldGEkIHRvIGJlIGVzdGltYXRlZCB3aXRoIGhpZ2ggcHJvYmFiaWxpdHkNCg0KRm9yIGdpdmVuIGVycm9yIHByb2JhYmlsaXR5ICRcYWxwaGEgXGluIFswLDFdJCwgdGhlIGZ1bmN0aW9ucyAkR191ID0gZ191KFhfMSwgXGRvdHMsIFhfbikkIGFuZCAkR19vID0gZ19vKFhfMSwgXGRvdHMsIFhfbikgb2YgdGhlIHNhbXBsZSB2YXJpYWJsZXMgZ2l2ZSBhICYoMSAtIFxhbHBoYSkmIC0gY29uZmlkZW5jZSBpbnRlcnZhbCBpZjoNCiQkUChHX3UgXGdlIEdfbykgPSAxJCQNCiQkUChHX3UgXGdlIFx0aGV0YSBcZ2UgR19vKSA9IDEgLSBcYWxwaGEkJA0KJjEgLSBcYWxwaGEmIGlzIGFsc28gY2FsbGVkIGNvbmZpZGVuY2UgbGV2ZWwNCg0KLS0tDQoNCiMjIyMgRm9yIHRoZSBbZXhwZWN0ZWQgdmFsdWVdKC4vY2VudHJhbF90ZW5kZW5jeS5uYi5odG1sKQ0KJDEtXGFscGhhJC1jb25maWRlbmNlIG9mIGEgWyROKFxtdSwgb14yKSQtZGlzdHJpYnV0aW9uXSguL25vcm1hbERpc3RyaWJ1dGlvbi5uYi5odG1sKSBmb3Iga25vd24gJG9eMiQ6ICRbXG92ZXJsaW5le1h9LVpfezEtXGFscGhhLzJ9ICogXGZyYWN7b317XHNxcnR7bn19LCBcb3ZlcmxpbmV7WH0rWl97MS1cYWxwaGEvMn0gKiBcZnJhY3tvfXtcc3FydHtufX1dJA0KDQotLS0NCg0KIyMjIyBGb3IgdW5rbm93biBbdmFyaWFuY2UgJG9eMiRdKC4vcHJvcF9kaXN0cmlidXRpb25fbWVhc3VyZXMubmIuaHRtbCkNCiRbXG92ZXJsaW5le1h9LXRfezEtXGFscGhhLzJ9KG4tMSkgKiBcZnJhY3tTfXtcc3FydHtufX0sIFxvdmVybGluZXtYfSt0X3sxLVxhbHBoYS8yfShuLTEpICogXGZyYWN7U317XHNxcnR7bn19XSQgPGJyPg0KJFMgPSBcc3FydHtcZnJhY3sxfXtuLTF9IFxzdW1fe2k9MX1ee259IChYX2kgLSBcb3ZlcmxpbmV7WH0pXjJ9JCA8YnI+DQoNCltCYWNrIHRvIFRhYmxlIG9mIENvbnRlbnRzXSguLi8p</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkludGVydmFsIGVzdGltYXRpb24iDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpJZGVhOiBEZXRlcm1pbmUgYW4gaW50ZXJ2YWwgZGVwZW5kaW5nIG9uIHRoZSB2YWx1ZXMgb2YgdGhlIHNhbXBsZSB2YXJpYWJsZXMgJFhfMSwgXGRvdHMsIFhfbiQgdGhhdCBjb250YWlucyB0aGUgdHJ1ZSB2YWx1ZSBvZiB0aGUgcGFyYW1ldGVyICRcdGhldGEkIHRvIGJlIGVzdGltYXRlZCB3aXRoIGhpZ2ggcHJvYmFiaWxpdHkNCg0KRm9yIGdpdmVuIGVycm9yIHByb2JhYmlsaXR5ICRcYWxwaGEgXGluIFswLDFdJCwgdGhlIGZ1bmN0aW9ucyAkR191ID0gZ191KFhfMSwgXGRvdHMsIFhfbikkIGFuZCAkR19vID0gZ19vKFhfMSwgXGRvdHMsIFhfbikkIG9mIHRoZSBzYW1wbGUgdmFyaWFibGVzIGdpdmUgYSAkKDEgLSBcYWxwaGEpJCAtIGNvbmZpZGVuY2UgaW50ZXJ2YWwgaWY6DQokJFAoR191IFxnZSBHX28pID0gMSQkDQokJFAoR191IFxnZSBcdGhldGEgXGdlIEdfbykgPSAxIC0gXGFscGhhJCQNCiQxIC0gXGFscGhhJCBpcyBhbHNvIGNhbGxlZCBjb25maWRlbmNlIGxldmVsDQoNCi0tLQ0KDQojIyMjIENvbmZpZGVuY2UgaW50ZXJ2YWwgb3IgdGhlIFtleHBlY3RlZCB2YWx1ZV0oLi9jZW50cmFsX3RlbmRlbmN5Lm5iLmh0bWwpDQoNCiMjIyMjIC0gQ2FzZSAxOiAkb14yJCBrbm93bjsgW25vcm1hbGx5IGRpc3RyaWJ1dGVkXSguL25vcm1hbERpc3RyaWJ1dGlvbi5uYi5odG1sKQ0KDQokW1xvdmVybGluZXtYfSAtIHpfezEtXGZyYWN7XGFscGhhfXsyfX1cZnJhY3tvfXtcc3FydHtufX0sIFxvdmVybGluZXtYfSArIHpfezEtXGZyYWN7XGFscGhhfXsyfX1cZnJhY3tvfXtcc3FydHtufX1dJA0KDQojIyMjIyAtIENhc2UgMjogJG9eMiQgdW5rbm93bjsgW25vcm1hbGx5IGRpc3RyaWJ1dGVkXSguL25vcm1hbERpc3RyaWJ1dGlvbi5uYi5odG1sKQ0KDQokW1xvdmVybGluZXtYfSAtIHRfezEtXGZyYWN7XGFscGhhfXsyfX0obi0xKVxmcmFje1N9e1xzcXJ0e259fSwgXG92ZXJsaW5le1h9ICsgdF97MS1cZnJhY3tcYWxwaGF9ezJ9fShuLTEpXGZyYWN7U317XHNxcnR7bn19XSQgd2l0aCAkUyA9IFxzcXJ0e1xmcmFjezF9e24tMX1cc3VtX3tpfShYX2ktXG92ZXJsaW5le1h9KV4yfSQNCg0KIyMjIyMgLSBDYXNlIDM6ICRvXjIkIGtub3duOyBhbnkgZGlzdHJpYnV0aW9uDQoNCiRbXG92ZXJsaW5le1h9IC0gel97MS1cZnJhY3tcYWxwaGF9ezJ9fVxmcmFje299e1xzcXJ0e259fSwgXG92ZXJsaW5le1h9ICsgel97MS1cZnJhY3tcYWxwaGF9ezJ9fVxmcmFje299e1xzcXJ0e259fV0kDQoNCiMjIyMjIC0gQ2FzZSA0OiAkb14yJCB1bmtub3duOyBhbnkgZGlzdHJpYnV0aW9uDQoNCiRbXG92ZXJsaW5le1h9IC0gel97MS1cZnJhY3tcYWxwaGF9ezJ9fVxmcmFje1N9e1xzcXJ0e259fSwgXG92ZXJsaW5le1h9ICsgel97MS1cZnJhY3tcYWxwaGF9ezJ9fVxmcmFje1N9e1xzcXJ0e259fV0kDQoNCioqKk5vdGUgdGhhdCB0aGUgdmFsdWVzIGZvciAkel9wJCBhbmQgJHRfcCQgYXJlIGdpdmVuIGluIGEgdGFibGUgKHNlZSBib29rIHBhZ2UgNTQ3IGZmLikqKioNCg0KIyMjIyBGb3IgdGhlIFt2YXJpYW5jZSAkb14yJF0oLi9wcm9wX2Rpc3RyaWJ1dGlvbl9tZWFzdXJlcy5uYi5odG1sKTsgW25vcm1hbGx5IGRpc3RyaWJ1dGVkXSguL25vcm1hbERpc3RyaWJ1dGlvbi5uYi5odG1sKQ0KDQokW1xmcmFjeyhuLTEpU14yfXtxX3sxLVxmcmFjezEtXGFscGhhfXsyfX19LCBcZnJhY3sobi0xKVNeMn17cV97XGZyYWN7XGFscGhhfXsyfX19XSQ=</div>
 
 
 
