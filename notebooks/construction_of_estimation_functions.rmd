@@ -15,10 +15,17 @@ To find the ML-estimator we need to derive the likelihood function after $\theta
 <br>
 <br>
 
-##### Example: ML-estimator for a [exponential distribution](./exponentialDistribution.nb.html) where $\lambda$ is searched
+---
+
+##### ML-estimator for a [exponential distribution](./exponentialDistribution.nb.html) where $\lambda$ is searched
 $f(x|\lambda) = \prod_{i = 1}^{n} \lambda e ^{-\lambda x_i} = \lambda^n e^{-\lambda \sum x_i}$<br>
 $n - \lambda \sum_{i=1}^{n}x_i= 0$ <br>
 $\lambda = \frac{1}{\overline{x}}$
+
+---
+
+##### Likelihood for a [binomial distribution](./binominal_Distri.nb.html) where $\pi$ is searched
+$L(\pi) = \pi^x(1-\pi)^{n-x}$
 
 ---
 

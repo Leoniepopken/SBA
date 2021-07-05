@@ -18,4 +18,7 @@ $$f(x) = \begin{cases}
 0  ,& x < 0
 \end{cases} $$
 
+#### Expected value
+$E(X) = \frac{1}{\lambda}$
+
 [Back to Table of Contents](../)

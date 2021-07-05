@@ -19,4 +19,9 @@ with $\Omega = {\omega_1, \omega_2} and P(\omega = \omega_1) = \pi$, the number 
 - Addition of independent binomially distributed random variables: If $X ~ B(n, \pi)$ and $Y ~ B(m, \pi)$ and X, Y are independent, then the sum X + Y is binomially distributed with parameters n + m and \pi:
 $X + Y ~ B(n + m, \pi)$
 
+---
+
+#### [Likelihood function](./construction_of_estimation_functions.nb.html) for unknown $\pi$
+$L(\pi) = \pi^x(1-\pi)^{n-x}$
+
 [Back to Table of Contents](../)
