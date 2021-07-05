@@ -215,16 +215,31 @@ pre code {
 
 
 <!-- rnb-text-begin -->
-<p>We consider the following test problems in which a hypothetical expected value <span class="math inline">\(\mu_0\)</span> is compared to the true expected value <span class="math inline">\(\mu\)</span>:</p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(H_0: \mu = \mu_0\)</span> versus <span class="math inline">\(H_1: \mu != \mu_0\)</span> (two-tailed test problem)</li>
-<li><span class="math inline">\(H_0: \mu = \mu_0\)</span> versus <span class="math inline">\(H_1: \mu &lt; \mu_0\)</span> (left-tailed test problem)</li>
-<li><span class="math inline">\(H_0: \mu = \mu_0\)</span> versus <span class="math inline">\(H_1: \mu &gt; \mu_0\)</span> (right-tailed test problem)</li>
+<p>We consider the following test problems in which a hypothetical expected value <span class="math inline">\(\mu_0\)</span> is compared to the true expected value <span class="math inline">\(\mu\)</span>: <br></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(H_0: \mu = \mu_0\)</span> versus <span class="math inline">\(H_1: \mu != \mu_0\)</span> (two-tailed test problem) <br></li>
+<li><span class="math inline">\(H_0: \mu = \mu_0\)</span> versus <span class="math inline">\(H_1: \mu &lt; \mu_0\)</span> (left-tailed test problem) <br></li>
+<li><span class="math inline">\(H_0: \mu = \mu_0\)</span> versus <span class="math inline">\(H_1: \mu &gt; \mu_0\)</span> (right-tailed test problem) <br></li>
 </ol>
+<div id="assumptions" class="section level4">
+<h4>Assumptions: <br></h4>
+<ul>
+<li>We are interested in the distribution of a characteristic in a population <br></li>
+<li>We assume that the characteristic is <a href="./normalDistribution.nb.html">normally distributed</a>, where <span class="math inline">\(o^2\)</span> is known, but <span class="math inline">\(\mu\)</span> unknown <br> <br></li>
+</ul>
+</div>
+<div id="test-size" class="section level4">
+<h4>Test size</h4>
+<p><span class="math inline">\(Z = \frac{\overline{X} -\mu_0}{o/\sqrt{n}}\)</span> <br></p>
+</div>
+<div id="decision-rules" class="section level4">
+<h4>Decision rules:</h4>
+<p>The decision, in favor of <span class="math inline">\(H_0\)</span>, is made: <br> (a), if <span class="math inline">\(|z| &gt; z_{1-\alpha/2}\)</span> <br> (b), if <span class="math inline">\(z &lt; - z_{1-\alpha}\)</span> <br> (c), if <span class="math inline">\(z &gt; z_{1-\alpha}\)</span> <br></p>
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlotdGVzdCBmb3IgdGhlIGV4cGVjdGVkIHZhbHVlIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KV2UgY29uc2lkZXIgdGhlIGZvbGxvd2luZyB0ZXN0IHByb2JsZW1zIGluIHdoaWNoIGEgaHlwb3RoZXRpY2FsIGV4cGVjdGVkIHZhbHVlICRcbXVfMCQgaXMgY29tcGFyZWQgdG8gdGhlIHRydWUgZXhwZWN0ZWQgdmFsdWUgJFxtdSQ6DQoNCigxKSAkSF8wOiBcbXUgPSBcbXVfMCQgdmVyc3VzICRIXzE6IFxtdSAhPSBcbXVfMCQgKHR3by10YWlsZWQgdGVzdCBwcm9ibGVtKQ0KKDIpICRIXzA6IFxtdSA9IFxtdV8wJCB2ZXJzdXMgJEhfMTogXG11IDwgXG11XzAkIChsZWZ0LXRhaWxlZCB0ZXN0IHByb2JsZW0pDQooMykgJEhfMDogXG11ID0gXG11XzAkIHZlcnN1cyAkSF8xOiBcbXUgPiBcbXVfMCQgKHJpZ2h0LXRhaWxlZCB0ZXN0IHByb2JsZW0pDQoNCltCYWNrIHRvIFRhYmxlIG9mIENvbnRlbnRzXSguLi8p</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlotdGVzdCBmb3IgdGhlIGV4cGVjdGVkIHZhbHVlIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KV2UgY29uc2lkZXIgdGhlIGZvbGxvd2luZyB0ZXN0IHByb2JsZW1zIGluIHdoaWNoIGEgaHlwb3RoZXRpY2FsIGV4cGVjdGVkIHZhbHVlICRcbXVfMCQgaXMgY29tcGFyZWQgdG8gdGhlIHRydWUgZXhwZWN0ZWQgdmFsdWUgJFxtdSQ6IDxicj4NCg0KKGEpICRIXzA6IFxtdSA9IFxtdV8wJCB2ZXJzdXMgJEhfMTogXG11ICE9IFxtdV8wJCAodHdvLXRhaWxlZCB0ZXN0IHByb2JsZW0pIDxicj4NCihiKSAkSF8wOiBcbXUgPSBcbXVfMCQgdmVyc3VzICRIXzE6IFxtdSA8IFxtdV8wJCAobGVmdC10YWlsZWQgdGVzdCBwcm9ibGVtKSA8YnI+DQooYykgJEhfMDogXG11ID0gXG11XzAkIHZlcnN1cyAkSF8xOiBcbXUgPiBcbXVfMCQgKHJpZ2h0LXRhaWxlZCB0ZXN0IHByb2JsZW0pIDxicj4NCg0KIyMjIyBBc3N1bXB0aW9uczogPGJyPg0KLSBXZSBhcmUgaW50ZXJlc3RlZCBpbiB0aGUgZGlzdHJpYnV0aW9uIG9mIGEgY2hhcmFjdGVyaXN0aWMgaW4gYSBwb3B1bGF0aW9uIDxicj4NCi0gV2UgYXNzdW1lIHRoYXQgdGhlIGNoYXJhY3RlcmlzdGljIGlzIFtub3JtYWxseSBkaXN0cmlidXRlZF0oLi9ub3JtYWxEaXN0cmlidXRpb24ubmIuaHRtbCksIHdoZXJlICRvXjIkIGlzIGtub3duLCBidXQgJFxtdSQgdW5rbm93biA8YnI+IDxicj4NCg0KIyMjIyBUZXN0IHNpemUNCiRaID0gXGZyYWN7XG92ZXJsaW5le1h9IC1cbXVfMH17by9cc3FydHtufX0kIDxicj4NCg0KIyMjIyBEZWNpc2lvbiBydWxlczoNClRoZSBkZWNpc2lvbiwgaW4gZmF2b3Igb2YgJEhfMCQsIGlzIG1hZGU6IDxicj4NCihhKSwgaWYgJHx6fCA+IHpfezEtXGFscGhhLzJ9JCA8YnI+DQooYiksIGlmICR6IDwgLSB6X3sxLVxhbHBoYX0kIDxicj4NCihjKSwgaWYgJHogPiB6X3sxLVxhbHBoYX0kIDxicj4NCg0KW0JhY2sgdG8gVGFibGUgb2YgQ29udGVudHNdKC4uLyk=</div>
 
 
 

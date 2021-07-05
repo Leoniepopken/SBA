@@ -10,7 +10,30 @@ A test statistic for a statistical test problem is a function $T = g(X_1, \dots,
 
 ---
 
-#### [Z-test for the expected value](./z-test.nb.html)
+#### Steps to test a hypotheses:
+1. Find $H_0$ and $H_1$
+2. Find which values you have given and select a proper test
+3. Calculate the test size
+4. Compare your result with the rules of decision-making to find out, wether $H_0$ is rejected or not
 
-#### [T-test for the expected value](./t-test.nb.html)
+---
+
+#### [Approximate binomial test](./binomial_test.nb.html)
+For large samples.
+Can be used if the population is unknown.
+
+---
+
+#### [(Gaussian) Z-test for the expected value of a normal distribution](./z-test.nb.html)
+$o^2$ is known, but $\mu$ unknown
+
+---
+
+#### [T-test for the expected value of a normal distribution](./t-test.nb.html)
+$o^2$ and $\mu$ are unknown
+
+---
+
+### [Errors in statistical tests] coming soon!
+
 [Back to Table of Contents](../)

@@ -1,0 +1,20 @@
+---
+title: "Approximate binomial test"
+output: html_notebook
+---
+
+For given test problems: <br>
+(a) $H_0: \pi = \pi_0$ vs $H_1: \pi != \pi_0$ <br>
+(b) $H_0: \pi = \pi_0$ vs $H_1: \pi < \pi_0$ <br>
+(c) $H_0: \pi = \pi_0$ vs $H_1: \pi > \pi_0$ <br>
+
+#### Test size
+$Z = \frac{X-n\pi_0}{\sqrt{n\pi_0(1-\pi_0)}} = \frac{\overline{X}-\pi_0}{\sqrt{\frac{\pi_0(1-\pi_0)}{n}}}$
+
+#### Decision rules:
+With given $\alpha$ the decision, if $H_0$ is rejected, is made: <br>
+(a), if $|z| > z_{1-\alpha/2}$ <br>
+(b), if $z < - z_{1-\alpha}$ <br>
+(c), if $z > z_{1-\alpha}$ <br>
+
+[Back to Table of Contents](../)

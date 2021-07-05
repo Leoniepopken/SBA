@@ -3,4 +3,19 @@ title: "T-test for the expected value"
 output: html_notebook
 ---
 
-coming soon!
+We consider the following test problems in which a hypothetical expected value $\mu_0$ is compared to the true expected value $\mu$: <br>
+
+(a) $H_0: \mu = \mu_0$ versus $H_1: \mu != \mu_0$ (two-tailed test problem) <br>
+(b) $H_0: \mu = \mu_0$ versus $H_1: \mu < \mu_0$ (left-tailed test problem) <br>
+(c) $H_0: \mu = \mu_0$ versus $H_1: \mu > \mu_0$ (right-tailed test problem) <br>
+
+#### Test size
+$T = \frac{\overline{X} -\mu_0}{S/\sqrt{n}}$ <br>
+
+#### Decision Rules
+Rejection region for significance level $\alpha$: <br>
+(a), if $|t| > t_{1-\alpha/2}(n-1)$ <br>
+(b), if $t < - t_{1-\alpha}(n-1)$ <br>
+(c), if $t > t_{1-\alpha}(n-1)$ <br>
+
+[Back to Table of Contents](../)
