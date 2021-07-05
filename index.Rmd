@@ -63,7 +63,7 @@ _Note:_ This website is a Work-In-Progress. If you feel like something is missin
   4. [Construction of estimation functions](./notebooks/construction_of_estimation_functions.nb.html)
   5. [Interval estimation](./notebooks/interval_estimation.nb.html)
 
-<br>[Overiew: statistical tests](./overview_tests.nb.html)
+<br>[Overiew: statistical tests](./notebooks/overview_tests.nb.html)
 
 ---
 
