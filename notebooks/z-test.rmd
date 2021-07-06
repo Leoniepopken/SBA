@@ -13,7 +13,7 @@ We consider the following test problems in which a hypothetical expected value $
 $Z = \frac{\overline{X} -\mu_0}{o/\sqrt{n}}$ <br>
 
 #### Decision rules:
-The decision, in favor of $H_0$, is made: <br>
+$H_0$ is rejected, if: <br>
 (a), if $|z| > z_{1-\alpha/2}$ <br>
 (b), if $z < - z_{1-\alpha}$ <br>
 (c), if $z > z_{1-\alpha}$ <br>

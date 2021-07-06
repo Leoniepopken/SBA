@@ -13,7 +13,7 @@ We consider the following test problems in which a hypothetical expected value $
 $T = \frac{\overline{X} -\mu_0}{S/\sqrt{n}}$ <br>
 
 #### Decision Rules
-Rejection region for significance level $\alpha$: <br>
+$H_0$ is rejected, if: <br>
 (a), if $|t| > t_{1-\alpha/2}(n-1)$ <br>
 (b), if $t < - t_{1-\alpha}(n-1)$ <br>
 (c), if $t > t_{1-\alpha}(n-1)$ <br>

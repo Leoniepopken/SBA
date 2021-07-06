@@ -12,7 +12,7 @@ For given test problems: <br>
 $Z = \frac{X-n\pi_0}{\sqrt{n\pi_0(1-\pi_0)}} = \frac{\overline{X}-\pi_0}{\sqrt{\frac{\pi_0(1-\pi_0)}{n}}}$
 
 #### Decision rules:
-With given $\alpha$ the decision, if $H_0$ is rejected, is made: <br>
+$H_0$ is rejected, if: <br>
 (a), if $|z| > z_{1-\alpha/2}$ <br>
 (b), if $z < - z_{1-\alpha}$ <br>
 (c), if $z > z_{1-\alpha}$ <br>
