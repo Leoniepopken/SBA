@@ -22,11 +22,11 @@ $[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}, \overline{X} + z_{1-\
 
 $[\overline{X} - t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}, \overline{X} + t_{1-\frac{\alpha}{2}}(n-1)\frac{S}{\sqrt{n}}]$ with $S = \sqrt{\frac{1}{n-1}\sum_{i}(X_i-\overline{X})^2}$
 
-##### - Case 3: $o^2$ known; any distribution
+##### - Case 3: $o^2$ known; any distribution (n > 30)
 
 $[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}]$
 
-##### - Case 4: $o^2$ unknown; any distribution
+##### - Case 4: $o^2$ unknown; any distribution (n > 30)
 
 $[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}, \overline{X} + z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}]$
 
@@ -35,3 +35,9 @@ $[\overline{X} - z_{1-\frac{\alpha}{2}}\frac{S}{\sqrt{n}}, \overline{X} + z_{1-\
 #### For the [variance $o^2$](./prop_distribution_measures.nb.html); [normally distributed](./normalDistribution.nb.html)
 
 $[\frac{(n-1)S^2}{q_{1-\frac{1-\alpha}{2}}}, \frac{(n-1)S^2}{q_{\frac{\alpha}{2}}}]$
+
+---
+
+#### Width of an Interval
+
+$B = 2*t_{1-\frac{\alpha}{2}}\frac{o}{\sqrt{n}}$

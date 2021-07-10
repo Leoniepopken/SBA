@@ -3,21 +3,24 @@ title: "Central tendency measures"
 output: html_notebook
 ---
 
-### Mode
+#### Mode
 A value x with the highest probability $f(x) = P(X = x)$ is called mode of the random variable X (resp. its distribution)
 
 ---
 
-### Quantiles and median
+#### Quantiles and median
 Let 0 < p < 1. Every value $\tilde{x_p}$ for which the random variable X
 - takes on a value less or equal $\tilde{x_p}$ with probability of at least p an
 - takes on a value greater or equal $\tilde{x_p}$ with probability of at least 1 - p <br>
 is called ***p-quantile*** of the random variable X <br>
 For p = 0.5 the 50%-quantile $\tilde{x_p} = \tilde{x_0.5}$ is called the median
 
+##### Concrete calculation
+To get the median for a continuous random variable with given density function f(x) you are searching for a $m$, so that $\int_{-\infty}^{m} f(x) \; dx = 0.5$
+
 ---
 
-### Expected value
+#### Expected value
 The ***expected value*** is the most important location measure for ***metric*** discrete random variables
 
 $$\mu = E(x) = x_1p_1 + ... + x_kp_k + ... = \sum\limits_{i \ge 1} x_ip_i$$

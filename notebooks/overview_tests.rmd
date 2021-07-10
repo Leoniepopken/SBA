@@ -34,6 +34,8 @@ $o^2$ and $\mu$ are unknown
 
 ---
 
-### [Errors in statistical tests] coming soon!
+#### Errors in statistical tests
+$P(Error type 1) = P(H_0 rejected | H_0 true)$ <br>
+$P(Error type 2) = P(H_0 not rejected | H_1 true) = 1 - P(H_0 rejected | H_0 true)$
 
 [Back to Table of Contents](../)
