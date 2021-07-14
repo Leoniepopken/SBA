@@ -18,6 +18,12 @@ $$f(x) = \begin{cases}
 0  ,& x < 0
 \end{cases} $$
 
+#### [Distribution Function](./distributionFunction.nb.html)
+$$F(x) = \begin{cases}
+ 1- e^{-\lambda x} ,& x \ge 0\\
+0  ,& x < 0
+\end{cases} $$
+
 #### Expected value
 $E(X) = \frac{1}{\lambda}$
 

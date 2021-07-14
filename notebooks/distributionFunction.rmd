@@ -36,12 +36,17 @@ $$F(x) = \int_{- \infty}^{x} f(t) \; dt = \begin{cases}
 
 ---
 
-#### For the exponential distribution
-$$F(x) = \int_{- \infty}^{x} f(t) \; dt = \begin{cases}
-\lambda e^{-\lambda x} ,& x \ge 0\\
+#### For the [exponential distribution](./exponentialDistribution.nb.html)
+$$F(x) = \begin{cases}
+1- e^{-\lambda x} ,& x \ge 0\\
 0  ,& x < 0
 \end{cases} $$
 
+---
+
+#### For the [poisson distribution](./poissonDistri.nb.html)
+(according to https://de.wikipedia.org/wiki/Poisson-Verteilung#Verteilungsfunktion)
+$$F(x) = e^{-\lambda}\sum_{k = 0}^{n}\frac{\lambda ^x}{x!}$$
 ---
 
 #### some calculation hints

@@ -30,5 +30,13 @@ The Po($\lambda$)-distribution ist obtained by counting the number of (rare) inc
 -  If $X ~ Po(\lambda)$ and $Y ~ Po(\lambda ')$ and X, Y are [independent](./independenceOfRandomVariables.nb.html), then the sum X + Y is Poisson distributed with parameter $\lambda + \lambda '$: $X + Y ~ Po(\lambda + \lambda ')$
 - The shape of the probability histogram strongly depends on the intensity rate \lambda
 
+---
+
+#### Related R commands
+`ppois(x, lambda)` gives the Poisson distribution
+Example: Compute the probability $P (X \le 9)$ with lambda = 3
+```{R}
+ppois(9, 3 )
+```
 
 [Back to Table of Contents](../)

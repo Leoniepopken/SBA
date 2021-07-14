@@ -24,4 +24,13 @@ $X + Y ~ B(n + m, \pi)$
 #### [Likelihood function](./construction_of_estimation_functions.nb.html) for unknown $\pi$
 $L(\pi) = \pi^x(1-\pi)^{n-x}$
 
+---
+#### Related R commands
+`pbinom(x,n,p)` gives the binomial distribution with parameters n and p <br>
+
+Example: Compute the probability $P (X \le 9)$ with n = 20 and p = 0.2
+```{R}
+pbinom(9, 20, 0.2)
+```
+
 [Back to Table of Contents](../)
