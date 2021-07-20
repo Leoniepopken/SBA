@@ -243,11 +243,29 @@ pre code {
 <div id="expected-value" class="section level4">
 <h4>Expected value</h4>
 <p><span class="math inline">\(E(X) = \frac{1}{\lambda}\)</span></p>
+</div>
+<div id="section" class="section level2">
+<h2>—</h2>
+<div id="related-r-commands" class="section level4">
+<h4>Related R commands</h4>
+<p><code>pexp(x, rate)</code> gives the exponential distribution with parameters x and <span class="math inline">\(\lambda\)</span></p>
+<p>Example: Compute the probability <span class="math inline">\(P (X \le 9)\)</span> with x = 9 and <span class="math inline">\(\lambda\)</span> = 3</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoicGV4cCg5LCAzKSJ9 -->
+<pre class="r"><code>pexp(9, 3)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDFcbiJ9 -->
+<pre><code>[1] 1</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p><a href="../">Back to Table of Contents</a></p>
 <!-- rnb-text-end -->
 </div>
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkV4cG9uZW50aWFsIGRpc3RyaWJ1dGlvbiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCi0gcmVzdWx0cyBmcm9tIHRoZSBtb2RlbGluZyBvZiBkdXJhdGlvbnMgd2hlcmUgdGltZSBpcyBtZWFzdXJlZCAtIGF0IGxlYXN0IGFwcHJveGltYXRlbHkgLSBjb250aW51b3VzbHkNCg0KIyMjIyBFeGFtcGxlOg0KTGlmZXRpbWUgb2YgYSBwcm9kdWN0IG9yIHRlY2huaWNhbCBzeXN0ZW0NCg0KIyMjIyBDb25kaXRpb24NClJlbWFpbmluZyBkdXJhdGlvbiBpcyBub3QgZGVwZW5kZW50IG9uIHRoZSB0aW1lIGFscmVhZHkgZWxhcHNlZCAoUHJvYmFiaWxpdHkgb2YgZmFpbHVyZSBvZiB0aGUgcHJvZHVjdCAvIHRlY2huaWNhbCBzeXN0ZW0gaW5kZXBlbmRlbnQgb2YgaXRzIGFnZSkNCg0KIyMjIyBbRGVuc2l0eV0oLi9kZW5zaXR5KQ0KDQokJGYoeCkgPSBcYmVnaW57Y2FzZXN9DQpcbGFtYmRhIGVeey1cbGFtYmRhIHh9ICwmIHggXGdlIDBcXA0KMCAgLCYgeCA8IDANClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgW0Rpc3RyaWJ1dGlvbiBGdW5jdGlvbl0oLi9kaXN0cmlidXRpb25GdW5jdGlvbi5uYi5odG1sKQ0KJCRGKHgpID0gXGJlZ2lue2Nhc2VzfQ0KIDEtIGVeey1cbGFtYmRhIHh9ICwmIHggXGdlIDBcXA0KMCAgLCYgeCA8IDANClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgRXhwZWN0ZWQgdmFsdWUNCiRFKFgpID0gXGZyYWN7MX17XGxhbWJkYX0kDQoNCltCYWNrIHRvIFRhYmxlIG9mIENvbnRlbnRzXSguLi8p</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkV4cG9uZW50aWFsIGRpc3RyaWJ1dGlvbiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCi0gcmVzdWx0cyBmcm9tIHRoZSBtb2RlbGluZyBvZiBkdXJhdGlvbnMgd2hlcmUgdGltZSBpcyBtZWFzdXJlZCAtIGF0IGxlYXN0IGFwcHJveGltYXRlbHkgLSBjb250aW51b3VzbHkNCg0KIyMjIyBFeGFtcGxlOg0KTGlmZXRpbWUgb2YgYSBwcm9kdWN0IG9yIHRlY2huaWNhbCBzeXN0ZW0NCg0KIyMjIyBDb25kaXRpb24NClJlbWFpbmluZyBkdXJhdGlvbiBpcyBub3QgZGVwZW5kZW50IG9uIHRoZSB0aW1lIGFscmVhZHkgZWxhcHNlZCAoUHJvYmFiaWxpdHkgb2YgZmFpbHVyZSBvZiB0aGUgcHJvZHVjdCAvIHRlY2huaWNhbCBzeXN0ZW0gaW5kZXBlbmRlbnQgb2YgaXRzIGFnZSkNCg0KIyMjIyBbRGVuc2l0eV0oLi9kZW5zaXR5KQ0KDQokJGYoeCkgPSBcYmVnaW57Y2FzZXN9DQpcbGFtYmRhIGVeey1cbGFtYmRhIHh9ICwmIHggXGdlIDBcXA0KMCAgLCYgeCA8IDANClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgW0Rpc3RyaWJ1dGlvbiBGdW5jdGlvbl0oLi9kaXN0cmlidXRpb25GdW5jdGlvbi5uYi5odG1sKQ0KJCRGKHgpID0gXGJlZ2lue2Nhc2VzfQ0KIDEtIGVeey1cbGFtYmRhIHh9ICwmIHggXGdlIDBcXA0KMCAgLCYgeCA8IDANClxlbmR7Y2FzZXN9ICQkDQoNCiMjIyMgRXhwZWN0ZWQgdmFsdWUNCiRFKFgpID0gXGZyYWN7MX17XGxhbWJkYX0kDQoNCi0tLQ0KLS0tDQojIyMjIFJlbGF0ZWQgUiBjb21tYW5kcw0KYHBleHAoeCwgcmF0ZSlgIGdpdmVzIHRoZSBleHBvbmVudGlhbCBkaXN0cmlidXRpb24gd2l0aCBwYXJhbWV0ZXJzIHggYW5kICRcbGFtYmRhJA0KDQpFeGFtcGxlOiBDb21wdXRlIHRoZSBwcm9iYWJpbGl0eSAkUCAoWCBcbGUgOSkkIHdpdGggeCA9IDkgYW5kICRcbGFtYmRhJCA9IDMNCmBgYHtSfQ0KcGV4cCg5LCAzKQ0KYGBgDQoNCltCYWNrIHRvIFRhYmxlIG9mIENvbnRlbnRzXSguLi8p</div>
 
 
 

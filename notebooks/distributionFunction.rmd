@@ -52,6 +52,7 @@ $$F(x) = e^{-\lambda}\sum_{k = 0}^{n}\frac{\lambda ^x}{x!}$$
 #### some calculation hints
 Probabilities can be calculated via the distribution function as follows: <br>
     - $P(X > x) = 1 - P(X \le x) = 1 - F(x)$ <br>
+    - $P(x < X \le y) = F(y) - F(x)$ <br>
     - $P(x < X < y) = P(X \le y) - P(X \le x) = F(y) - F(x)$ <br>
     - $P(x \le X \le y | X \le z) = \frac{P(x \le X \le y, X \le z)}{P(X \le z)} = \frac {P(x \le X \le z)}{P(X \le z)} = \frac{F(z) - F(x)}{F(z)}$ <br>
     - $P(X \le x) = F(x)$ <br>

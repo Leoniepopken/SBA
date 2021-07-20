@@ -27,4 +27,14 @@ $$F(x) = \begin{cases}
 #### Expected value
 $E(X) = \frac{1}{\lambda}$
 
+---
+---
+#### Related R commands
+`pexp(x, rate)` gives the exponential distribution with parameters x and $\lambda$
+
+Example: Compute the probability $P (X \le 9)$ with x = 9 and $\lambda$ = 3
+```{R}
+pexp(9, 3)
+```
+
 [Back to Table of Contents](../)
