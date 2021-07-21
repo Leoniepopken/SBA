@@ -10,4 +10,9 @@ specifically for $\mu = 0$ and $o^2 = 1$, the density $\phi$ is: $\frac{1}{\sqrt
 [Distribution Function](./distributionFunction.nb.html):
 $F(x) = \frac{1}{\sqrt{2 \pi ^2}}exp(-\frac{(x-\mu^2)}{2o^2})$
 
+---
+
+#### Standardization of random variables
+$$Z = \frac{X - \mu}{o}$$
+
 [Back to Table of Contents](../)
